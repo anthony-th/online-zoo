@@ -12,6 +12,7 @@
   font-family: 'Roboto';
   font-style: normal;
   color: #ffffff;
+  transition: .7s;
 }
 
 html {
@@ -33,7 +34,8 @@ html {
 
 .header__container,
 .watch-you__container,
-.the-backtage__container {
+.the-backtage__container,
+.pets__container {
   max-width: 1160px;
   display: flex;
   margin: 0 auto;
@@ -90,7 +92,8 @@ html {
 
 .link:hover,
 .logo:hover,
-.btn1:hover {
+.btn1:hover,
+.card:hover {
   cursor: pointer;
 }
 
@@ -137,6 +140,7 @@ html {
   text-transform: uppercase;
   position: relative;
   z-index: 3;
+  height: 400px;
 }
 
 .yellow {
@@ -175,12 +179,210 @@ html {
   border-radius: 468px;
 }
 
+.the-backtage__container {
+  gap: 87px;
+  align-items: flex-start;
+}
+
 .the-backtage {
-  padding: 140px 1px 180px 0;
+  /* padding: 140px 1px 180px 0; */
+  padding: 140px 1px 175px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .the-backtage__block {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  /* gap: 20px; */
+  gap: 21px;
+}
+
+.h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  color: #333B41;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333B41;
+  /* margin: 34px 0 14px; */
+  margin: 32px 0 12px;
+}
+
+.the-backtage__img {
+  width: 609px;
+  height: 403px;
+}
+
+.the-backtage__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333B41;
+}
+
+.the-backtage__bg {
+  position: absolute;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  right: -93px;
+  top: 12px;
+}
+
+.pets {
+  padding: 0 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pets__container {
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.or3 {
+  background: #FE9013;
+}
+
+.pets__background {
+  position: absolute;
+  bottom: 0;
+  left: -528px;
+}
+
+.pets .pets__background:last-child {
+  left: auto;
+  right: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  justify-content: center;
+}
+
+.card {
+  width: 366px;
+  height: 426px;
+  background:rgba(0, 0, 0, 0.75);
+  /* background: linear-gradient(#FA6F32 0%,  #FE9013 100%);
+  border-radius: 5px; */
+  border: 1px solid #FA6F32;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  /* padding: 1px 1px 0; */
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card__block {
+  background: #ffffff;
+  width: 100%;
+  padding: 8px 8px 14px 16px;
+  height: 60px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  position: relative;
+}
+
+.card__text {
+  width: 294px;
+  height: 39px;
+  padding: 3px 0 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.smallParagraph {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+  position: relative;
+  bottom: 3px;
+}
+
+.card__icons {
+  width: 48px;
+  height: 38px;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+}
+
+.card:first-child .card__icons .icon:first-child,
+.card:nth-child(3) .card__icons .icon:first-child,
+.card:nth-child(4) .card__icons .icon:first-child {
+  bottom: 1px;
+  right: 9.71px;
+}
+
+.card:first-child .card__icons .icon:last-child,
+.card:nth-child(3) .card__icons .icon:last-child,
+.card:nth-child(4) .card__icons .icon:last-child {
+  bottom: 3.75px;
+  right: 4px;
+  fill: #468E0D;
+}
+
+.card:nth-child(2) .card__icons .icon:first-child,
+.card:nth-child(5) .card__icons .icon:first-child,
+.card:nth-child(6) .card__icons .icon:first-child {
+  right: 10.74px;
+  bottom: 1.5px;
+}
+
+.card:nth-child(2) .card__icons .icon:last-child,
+.card:nth-child(5) .card__icons .icon:last-child,
+.card:nth-child(6) .card__icons .icon:last-child {
+  right: 0;
+  bottom: 0;
+}
+
+.card:hover .card__img {
+  /* transform: scale3d(10px, 10px, 10px);
+   */
+   position: relative;
+   top: 25px;
+   transform: scale(1.2);
+   opacity: 0.75;
+}
+
+.card:hover .card__block {
+  /* bottom: 42px; */
+  background:rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .card__text p {
+  color: #ffffff;
+  transition: all ease-in-out 1s;
+}
+
+.card:hover .card__icons img {
+  display: none;
 }
