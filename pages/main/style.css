@@ -565,22 +565,24 @@ body {
   gap: 29px;
 }
 
-.card__border {
+.testimonials__card {
+  position: relative;
   width: 268px;
   height: 391px;
-  border: linear-gradient(315deg, #FEBDAB 37%, #F3A9F8 66%, #E0D8F0 100%, #EAF7FE 100%, #EAF7FE 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
 }
 
-.testimonials__card {
-  width: calc(268px - 4px);
-  height: calc(391px - 4px);
-  background-color: #F1F3F2;
-  border: none;
-  outline: none;
+.testimonials__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: add, add;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 .gray-light {
