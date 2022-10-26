@@ -284,6 +284,7 @@ body {
   flex-direction: column;
   border-radius: 5px;
   overflow: hidden;
+  position: relative;
   /* padding: 1px 1px 0; */
 }
 
@@ -387,9 +388,11 @@ body {
   }
 }
 
-
 .card:hover .card__block {
-  /* bottom: 42px; */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
   background:rgba(0, 0, 0, 0.5);
 }
 
@@ -398,8 +401,23 @@ body {
   transition: all ease-in-out 1s;
 }
 
+.card:hover .card__text {
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  align-items: end;
+}
+
 .card:hover .card__icons img {
   display: none;
+}
+
+.card:hover .btn {
+  font-size: 22px;
+}
+
+.card:hover .smallParagraph {
+  font-size: 20px;
 }
 
 .pick-and-feed {
