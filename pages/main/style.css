@@ -185,7 +185,6 @@ body {
 }
 
 .the-backtage {
-  /* padding: 140px 1px 180px 0; */
   padding: 140px 1px 180px 0;
   position: relative;
   overflow: hidden;
@@ -194,7 +193,6 @@ body {
 .the-backtage__block {
   display: flex;
   flex-direction: column;
-  /* gap: 20px; */
   gap: 21px;
 }
 
@@ -214,8 +212,6 @@ body {
   font-size: 24px;
   line-height: 120%;
   color: #333B41;
-  /* margin: 34px 0 14px; */
-  /* margin: 32px 0 12px; */
 }
 
 .the-backtage__img {
@@ -277,15 +273,12 @@ body {
   width: 366px;
   height: 426px;
   background:rgba(0, 0, 0, 0.75);
-  /* background: linear-gradient(#FA6F32 0%,  #FE9013 100%);
-  border-radius: 5px; */
   border: 1px solid #FA6F32;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
-  /* padding: 1px 1px 0; */
 }
 
 .card__img {
@@ -374,6 +367,7 @@ body {
    animation: 1.2s 1 alternate slidein forwards;
    position: relative;
    opacity: 0.75;
+   filter: blur(1px);
 }
 
 @keyframes slidein {
@@ -403,7 +397,7 @@ body {
 
 .card:hover .card__text {
   position: absolute;
-  bottom: 30px;
+  bottom: 35px;
   right: 25px;
   align-items: end;
 }
@@ -415,10 +409,6 @@ body {
 .card:hover .btn,
 .card:hover .smallParagraph {
   font-size: 22px;
-}
-
-.card:hover .card__img {
-  filter: blur(1px);
 }
 
 .pick-and-feed {
@@ -466,7 +456,6 @@ body {
 .pick-and-feed__main-text:nth-child(2n-1) {
   width: 1061px;
   letter-spacing: 0.005em;
-  /* margin-bottom: 30px; */
 }
 
 .h3 {
@@ -480,12 +469,10 @@ body {
 .pick-and-feed__main-block {
   display: flex;
   flex-direction: column;
-  /* gap: 40px; */
   gap: 41px;
 }
 
 .pick-and-feed__cards {
-  /* margin-bottom: 40px; */
   display: flex;
   gap: 130px;
   margin: 0 auto;  
@@ -497,8 +484,6 @@ body {
   height: 244px;
   display: flex;
   flex-direction: column;
-  /* gap: 30px;
-   */
    gap: 33px;
 }
 
