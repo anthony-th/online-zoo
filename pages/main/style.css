@@ -12,7 +12,7 @@
   font-family: 'Roboto';
   font-style: normal;
   color: #ffffff;
-  transition: .7s;
+  transition: all .7s ease-in-out;
 }
 
 html {
@@ -412,12 +412,13 @@ body {
   display: none;
 }
 
-.card:hover .btn {
+.card:hover .btn,
+.card:hover .smallParagraph {
   font-size: 22px;
 }
 
-.card:hover .smallParagraph {
-  font-size: 20px;
+.card:hover .card__img {
+  filter: blur(1px);
 }
 
 .pick-and-feed {
