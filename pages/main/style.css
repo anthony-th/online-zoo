@@ -397,8 +397,8 @@ body {
 
 .card:hover .card__text {
   position: absolute;
-  bottom: 35px;
-  right: 25px;
+  bottom: 44px;
+  right: 35px;
   align-items: end;
 }
 
