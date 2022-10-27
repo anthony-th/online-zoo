@@ -70,7 +70,7 @@ body {
   margin: 0 auto;
 }
 
-.h1 {
+.title {
   font-weight: 400;
   font-size: 19.0145px;
   line-height: 130%;
@@ -707,7 +707,7 @@ body {
             filter: invert(56%) sepia(66%) saturate(966%) hue-rotate(350deg) brightness(102%) contrast(99%);
           }
         }
-        .h1 {
+        .title {
           position: relative;
           top: -1.55px;
         }
@@ -794,6 +794,10 @@ body {
           line-height: 130%;
           color: #FFFFFF;
           opacity: 0.5;
+          &:active {
+            color: #4B9200;
+            border-bottom: 1px solid #4B9200;
+          }
         }
       }
       .subtitle {
