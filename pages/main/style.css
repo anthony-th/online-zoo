@@ -69,7 +69,7 @@ body {
   margin: 0 auto;
 }
 
-.h1 {
+.title {
   font-weight: 400;
   font-size: 19.0145px;
   line-height: 130%;
@@ -684,7 +684,7 @@ body {
 .footer .footer__container .footer__left .logo:hover .logo__img {
   filter: invert(56%) sepia(66%) saturate(966%) hue-rotate(350deg) brightness(102%) contrast(99%);
 }
-.footer .footer__container .footer__left .logo .h1 {
+.footer .footer__container .footer__left .logo .title {
   position: relative;
   top: -1.55px;
 }
@@ -767,6 +767,10 @@ body {
   line-height: 130%;
   color: #FFFFFF;
   opacity: 0.5;
+}
+.footer .footer__container .footer__right .footer__copyright p:active {
+  color: #4B9200;
+  border-bottom: 1px solid #4B9200;
 }
 .footer .footer__container .footer__right .subtitle {
   color: #FFFFFF;
