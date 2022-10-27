@@ -51,6 +51,12 @@ body {
   position: relative;
   border: 1px solid #FFFFFF;
   border-radius: 2px;
+    &:hover {
+    border: 1px solid #FE9013;
+    .logo__img {
+      filter: invert(56%) sepia(66%) saturate(966%) hue-rotate(350deg) brightness(102%) contrast(99%);
+    }
+  }
   .logo__img {
     position: absolute;
     left: 7.19px;
@@ -695,6 +701,12 @@ body {
       .logo {
         border: 0.5px solid rgba($color: #ffffff, $alpha: 0.5);
         margin-bottom: 24px;
+        &:hover {
+          border: 1px solid #FE9013;
+          .logo__img {
+            filter: invert(56%) sepia(66%) saturate(966%) hue-rotate(350deg) brightness(102%) contrast(99%);
+          }
+        }
         .h1 {
           position: relative;
           top: -1.55px;
