@@ -19,8 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  max-width: 1600px;
+.section {
   margin: 0 auto;
 }
 
@@ -70,7 +69,7 @@ body {
   }
 }
 
-.h1 {
+.title {
   font-weight: 400;
   font-size: 19.0145px;
   line-height: 130%;
@@ -98,7 +97,12 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    .title {
+      background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
   }
 }
 
@@ -145,7 +149,6 @@ body {
   background-position: center;
 }
 
-
 .btn2 {
   width: 298px;
   height: 54px;
@@ -183,25 +186,82 @@ body {
       line-height: 140%;
       margin-bottom: 30px;
     }
-    .h3 {
-      &:last-child {
-        margin-bottom: 50px;
-      }
-    }
     .pickfeed__main-block {
+      margin-top: 60px;
       padding: 40px 92px 62px;
       background: rgba(255, 255, 255, 0.52);
       backdrop-filter: blur(2px);
       border-radius: 20px;
+      .h2 {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 120%;
+        padding-left: 250px;
+        margin-bottom: 20px;
+      }
+      .subtitle {
+        color: #333B41;
+      }
+      .top-block {
+        margin-top: 60px;
+        gap: 89px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+        .animals-widget {
+          width: 284px;
+          height: 246px;
+        }
+        .number-block {
+          padding-top: 105px;
+          display: flex;
+          flex-direction: column;
+          gap: 11px;
+          align-items: center;
+          .amount-of-days {
+            width: 82px;
+            height: 58px;
+            position: relative;
+            .x-icon {
+              width: 14px;
+              height: 14px;
+              position: absolute;
+              right: -64px;
+              top: calc(50% - 7px);
+            }
+            .amount-titles {
+              font-weight: 500;
+              font-size: 72px;
+              line-height: 80%;
+              text-align: center;
+              text-transform: uppercase;
+              color: #000000;
+            }
+          }
+          .text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #333B41;
+          }
+        }
+      }
+      .progress-bar {
+        width: 100%;
+        height: 40px;
+        &::before {
+          content: "Amount";
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #000000;
+          position: relative;
+          bottom: 32px;
+        }
+      }
     }
   }
 }
-
-
-
-
-
-
 
 .footer {
   background: #111115;
@@ -227,7 +287,7 @@ body {
       .logo {
         border: 0.5px solid rgba($color: #ffffff, $alpha: 0.5);
         margin-bottom: 24px;
-        .h1 {
+        .title {
           position: relative;
           top: -1.55px;
         }

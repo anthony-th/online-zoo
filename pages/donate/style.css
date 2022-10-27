@@ -18,8 +18,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  max-width: 1600px;
+.section {
   margin: 0 auto;
 }
 
@@ -69,7 +68,7 @@ body {
   bottom: 4.79px;
 }
 
-.h1 {
+.title {
   font-weight: 400;
   font-size: 19.0145px;
   line-height: 130%;
@@ -97,7 +96,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+.link:hover .title, .link:active .title {
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .orange {
@@ -182,14 +186,79 @@ body {
   line-height: 140%;
   margin-bottom: 30px;
 }
-.pickfeed .pickfeed__container .h3:last-child {
-  margin-bottom: 50px;
-}
 .pickfeed .pickfeed__container .pickfeed__main-block {
+  margin-top: 60px;
   padding: 40px 92px 62px;
   background: rgba(255, 255, 255, 0.52);
   backdrop-filter: blur(2px);
   border-radius: 20px;
+}
+.pickfeed .pickfeed__container .pickfeed__main-block .h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  padding-left: 250px;
+  margin-bottom: 20px;
+}
+.pickfeed .pickfeed__container .pickfeed__main-block .subtitle {
+  color: #333B41;
+}
+.pickfeed .pickfeed__container .pickfeed__main-block .top-block {
+  margin-top: 60px;
+  gap: 89px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.pickfeed .pickfeed__container .pickfeed__main-block .top-block .animals-widget {
+  width: 284px;
+  height: 246px;
+}
+.pickfeed .pickfeed__container .pickfeed__main-block .top-block .number-block {
+  padding-top: 105px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  align-items: center;
+}
+.pickfeed .pickfeed__container .pickfeed__main-block .top-block .number-block .amount-of-days {
+  width: 82px;
+  height: 58px;
+  position: relative;
+}
+.pickfeed .pickfeed__container .pickfeed__main-block .top-block .number-block .amount-of-days .x-icon {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: -64px;
+  top: calc(50% - 7px);
+}
+.pickfeed .pickfeed__container .pickfeed__main-block .top-block .number-block .amount-of-days .amount-titles {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.pickfeed .pickfeed__container .pickfeed__main-block .top-block .number-block .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333B41;
+}
+.pickfeed .pickfeed__container .pickfeed__main-block .progress-bar {
+  width: 100%;
+  height: 40px;
+}
+.pickfeed .pickfeed__container .pickfeed__main-block .progress-bar::before {
+  content: "Amount";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  position: relative;
+  bottom: 32px;
 }
 
 .footer {
@@ -218,7 +287,7 @@ body {
   border: 0.5px solid rgba(255, 255, 255, 0.5);
   margin-bottom: 24px;
 }
-.footer .footer__container .footer__left .logo .h1 {
+.footer .footer__container .footer__left .logo .title {
   position: relative;
   top: -1.55px;
 }
