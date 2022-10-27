@@ -730,7 +730,7 @@ body {
           line-height: 140%;
           display: flex;
           gap: 12px;
-          align-items: flex-end;
+          align-items: baseline;
           position: relative;
           &:hover {
             .social__title {

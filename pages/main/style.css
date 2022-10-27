@@ -707,7 +707,7 @@ body {
   line-height: 140%;
   display: flex;
   gap: 12px;
-  align-items: flex-end;
+  align-items: baseline;
   position: relative;
 }
 .footer .footer__container .footer__left .social .social__card:hover .social__title {
