@@ -51,6 +51,12 @@ body {
   border: 1px solid #FFFFFF;
   border-radius: 2px;
 }
+.logo:hover {
+  border: 1px solid #FE9013;
+}
+.logo:hover .logo__img {
+  filter: invert(56%) sepia(66%) saturate(966%) hue-rotate(350deg) brightness(102%) contrast(99%);
+}
 .logo .logo__img {
   position: absolute;
   left: 7.19px;
@@ -671,6 +677,12 @@ body {
 .footer .footer__container .footer__left .logo {
   border: 0.5px solid rgba(255, 255, 255, 0.5);
   margin-bottom: 24px;
+}
+.footer .footer__container .footer__left .logo:hover {
+  border: 1px solid #FE9013;
+}
+.footer .footer__container .footer__left .logo:hover .logo__img {
+  filter: invert(56%) sepia(66%) saturate(966%) hue-rotate(350deg) brightness(102%) contrast(99%);
 }
 .footer .footer__container .footer__left .logo .h1 {
   position: relative;
