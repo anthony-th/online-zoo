@@ -48,7 +48,7 @@ html {
   display: flex;
   align-items: center;
   position: relative;
-  border: 1px solid #FFFFFF;
+  border: 1.18841px solid #FFFFFF;
   border-radius: 2px;
     &:hover {
     border: 1px solid #FE9013;
@@ -58,7 +58,7 @@ html {
   }
   .logo__img {
     position: absolute;
-    left: 7.19px;
+    left: 8.19px;
     bottom: 4.79px;
   }
 }
@@ -72,7 +72,7 @@ html {
 .title {
   font-weight: 400;
   font-size: 19.0145px;
-  line-height: 130%;
+  line-height: 120%;
   text-align: center;
 }
 
@@ -275,7 +275,6 @@ html {
           .card__text {
             width: 294px;
             height: 39px;
-            padding: 2px 0 0px 0px;
             display: flex;
             flex-direction: column;
           }
@@ -528,7 +527,7 @@ html {
     align-items: center;
     position: relative;
     .h3 {
-      margin-bottom: 47px;
+      margin-bottom: 45px;
     }
     .testimonials__cards {
       display: flex;
@@ -577,6 +576,9 @@ html {
           height: 309px;
           overflow: hidden;
           letter-spacing: -0.008em;
+          .smallParagraph {
+            bottom: auto;
+          }
         }
         &:first-child,
         &:nth-child(2) {
