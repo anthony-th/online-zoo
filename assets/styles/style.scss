@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('../../assets/fonts/Roboto.woff2') format('woff2');
+  src: url(../../assets/fonts/Roboto.woff2) format('woff2');
   font-weight: 400;
   font-display: swap;
 }
@@ -19,8 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  max-width: 1600px;
+.section {
   margin: 0 auto;
 }
 
@@ -49,7 +48,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  border: 1px solid #FFFFFF;
+  border: 1.18841px solid #FFFFFF;
   border-radius: 2px;
     &:hover {
     border: 1px solid #FE9013;
@@ -59,7 +58,7 @@ body {
   }
   .logo__img {
     position: absolute;
-    left: 7.19px;
+    left: 8.19px;
     bottom: 4.79px;
   }
 }
@@ -73,7 +72,7 @@ body {
 .title {
   font-weight: 400;
   font-size: 19.0145px;
-  line-height: 130%;
+  line-height: 120%;
   text-align: center;
 }
 
@@ -98,7 +97,12 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    .title {
+      background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
   }
 }
 
@@ -116,6 +120,7 @@ body {
 .watch-you {
   background: url('../../assets/images/giantpanda.jpg') no-repeat;
   padding: 86px 0 100px;
+  background-position: center;
   background-position-y: -80px;
   .watch-you__container {
     justify-content: end;
@@ -179,18 +184,12 @@ body {
 }
 
 .the-backtage {
-  padding: 140px 1px 180px 0;
-  position: relative;
-  overflow: hidden;
+  padding: 140px 1px 176px 0;
+  background: url(../../assets/images/flower_foto1.png) no-repeat;
+  background-position: top 12px right -93px;
   .the-backtage__container {
     gap: 87px;
     align-items: flex-start;
-    .the-backtage__bg {
-      position: absolute;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-      right: -93px;
-      top: 12px;
-    }
     .the-backtage__img {
       width: 609px;
       height: 403px;
@@ -200,13 +199,16 @@ body {
       flex-direction: column;
       gap: 21px;
       .subtitle {
-        margin: 34px 0 16px;
+        margin: 32px 0 12px;
       }
       .the-backtage__text {
         font-weight: 400;
         font-size: 16px;
-        line-height: 130%;
+        line-height: 135%;
         color: #333B41;
+        &:last-child {
+          line-height: 140%;
+        }
       }
     }
   }
@@ -227,20 +229,21 @@ body {
 }
 
 .pets {
-  padding: 0 0 100px;
-  position: relative;
-  overflow: hidden;
+  padding: 0 0 99px;
+  background: url(../../assets/images/palm_foto.png) bottom 0 left -528px, url(../../assets/images/strelitzia.png) bottom 0 right 0;
+  background-repeat: no-repeat;
   .pets__container {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: 81px;
     .cards {
       display: flex;
       flex-wrap: wrap;
       gap: 20px 30px;
       justify-content: center;
       position: relative;
+      padding-top: 2px;
       .card {
         width: 366px;
         height: 426px;
@@ -277,7 +280,6 @@ body {
           .card__text {
             width: 294px;
             height: 39px;
-            padding: 3px 0 0px 0px;
             display: flex;
             flex-direction: column;
           }
@@ -299,6 +301,7 @@ body {
           .btn,
           .smallParagraph {
             font-size: 22px;
+            letter-spacing: -0.005em;
           }
           .card__icons {
             img {
@@ -325,7 +328,7 @@ body {
               right: 9.71px;
             }
             .icon:last-child {
-              bottom: 3.75px;
+              bottom: 1.75px;
               right: 4px;
               fill: #468E0D;
             }
@@ -337,12 +340,12 @@ body {
           .card__icons {
             .icon {
               &:first-child {
-                right: 10.74px;
-                bottom: 1.5px;
+                right: 13.74px;
+                bottom: 5.5px;
               }
               &:last-child {
                 right: 0;
-                bottom: 0;
+                bottom: 2px;
               }
             }
           }
@@ -352,7 +355,7 @@ body {
         display: flex;
         gap: 1198px;
         position: absolute;
-        top: calc(50% - 62px/2);
+        top: calc(50% - 32px);
       }
     }
   }
@@ -433,6 +436,7 @@ body {
           color: #333B41;
           text-decoration: none;
           border-bottom: 1px solid #FE9013;
+          padding-bottom: 2px;
           &:hover {
             color: #FE9013;
           }
@@ -449,23 +453,18 @@ body {
     .pick-and-feed__main-block {
       display: flex;
       flex-direction: column;
-      gap: 41px;
+      gap: 40px;
       .pick-and-feed__cards {
         display: flex;
         gap: 130px;
         margin: 0 auto;  
-        margin-bottom: 20px;
+        margin-bottom: 19px;
         .pick-and-feed__card {
           width: 168px;
           height: 244px;
           display: flex;
           flex-direction: column;
-          gap: 33px;
-          &:nth-child(2) {
-           .sparrow {
-             top: calc(50% - 27px);
-           }
-          }
+          gap: 30px;
           .pick-and-feed__card-block {
             width: 168px;
             height: 168px;
@@ -481,11 +480,16 @@ body {
               right: -102px;
               top: calc(50% - 23px);
             }
+            &:nth-child(2) {
+              .sparrow {
+                top: calc(50% - 27px);
+              }
+             }
           }
           .pick-and-feed__card-subtitle {
             font-weight: 400;
             font-size: 16px;
-            line-height: 120%;
+            line-height: 130%;
             color: #333B41;
           }
         }
@@ -520,20 +524,20 @@ body {
 }
 
 .testimonials {
-  padding: 140px 0 264px;
-  position: relative;
-  overflow: hidden;
+  padding: 141px 0 264px;
+  background: url(../../assets/images/leav_foto.png) no-repeat;
+  background-position: bottom -132px right -161.48px;
   .testimonials__container {
     flex-direction: column;
     align-items: center;
     position: relative;
     .h3 {
-      margin-bottom: 47px;
+      margin-bottom: 45px;
     }
     .testimonials__cards {
       display: flex;
       gap: 29px;
-      margin-bottom: 21px;
+      margin-bottom: 22px;
       .testimonials__card {
         position: relative;
         width: 268px;
@@ -577,6 +581,9 @@ body {
           height: 309px;
           overflow: hidden;
           letter-spacing: -0.008em;
+          .smallParagraph {
+            bottom: auto;
+          }
         }
         &:first-child,
         &:nth-child(2) {
@@ -673,7 +680,7 @@ body {
   border-radius: 5px;
   position: absolute;
   left: 0;
-  bottom: -83px;
+  bottom: -84px;
   text-decoration: none;
 }
 
@@ -732,6 +739,10 @@ body {
           gap: 12px;
           align-items: baseline;
           position: relative;
+          &:nth-child(2),
+          &:nth-child(3) {
+            align-items: center;
+          }
           &:hover {
             .social__title {
               background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
@@ -794,6 +805,7 @@ body {
           line-height: 130%;
           color: #FFFFFF;
           opacity: 0.5;
+          letter-spacing: -0.005em;
           &:active {
             color: #4B9200;
             border-bottom: 1px solid #4B9200;
@@ -802,7 +814,7 @@ body {
       }
       .subtitle {
         color: #FFFFFF;
-        margin-bottom: 14px;
+        margin-bottom: 12px;
       }
       .input__block {
         display: flex;
