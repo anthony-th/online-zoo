@@ -74,6 +74,7 @@ html {
   font-size: 19.0145px;
   line-height: 120%;
   text-align: center;
+  padding: 3.55px 0 0 1px;
 }
 
 .list {
@@ -118,7 +119,7 @@ html {
 }
 
 .watch-you {
-  background: url('../../assets/images/giantpanda.jpg') no-repeat;
+  background: url(../../assets/images/giantpanda.jpg) no-repeat;
   padding: 86px 0 100px;
   background-position: center;
   background-position-y: -80px;
@@ -134,21 +135,24 @@ html {
       position: relative;
       .watch-you__title {
         font-weight: 700;
-        font-size: 106.496px;
+        font-size: 106.5px;
         line-height: 75%;
         text-align: center;
         text-transform: uppercase;
         position: relative;
         z-index: 3;
         height: 400px;
-      }
-      .ellipse {
-        position: absolute;
-        width: 465px;
-        height: 465px;
-        right: 113px;
-        bottom: calc(69px + 54px);
-        border-radius: 468px;
+        &::before {
+          content: "";
+          width: 465px;
+          height: 465px;
+          border-radius: 465px;
+          position: absolute;
+          left: -73px;
+          top: -74px;
+          z-index: -1;
+          background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+        }
       }
     }
   }
@@ -310,7 +314,7 @@ html {
           }
           .card__text {
             position: absolute;
-            bottom: 44px;
+            bottom: 74px;
             right: 35px;
             align-items: end;
             p {
@@ -465,6 +469,24 @@ html {
           display: flex;
           flex-direction: column;
           gap: 30px;
+          position: relative;
+          &:first-child,
+          &:nth-child(2) {
+            &::before {
+              content: "";
+              position: absolute;
+              background-image: url(../../assets/svg/sparrow.svg);
+              width: 71px;
+              height: 37px;
+              left: calc(100% + 29px);
+              top: 59px;
+            }
+          }
+          &:nth-child(2) {
+            &::before {
+              top: 55px;
+            }
+          }
           .pick-and-feed__card-block {
             width: 168px;
             height: 168px;
@@ -474,17 +496,6 @@ html {
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
-            .sparrow {
-              position: absolute;
-              right: -102px;
-              top: calc(50% - 23px);
-            }
-            &:nth-child(2) {
-              .sparrow {
-                top: calc(50% - 27px);
-              }
-             }
           }
           .pick-and-feed__card-subtitle {
             font-weight: 400;
@@ -538,6 +549,8 @@ html {
       display: flex;
       gap: 29px;
       margin-bottom: 22px;
+      justify-content: center;
+      flex-wrap: wrap;
       .testimonials__card {
         position: relative;
         width: 268px;
@@ -814,7 +827,7 @@ html {
       }
       .subtitle {
         color: #FFFFFF;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
       }
       .input__block {
         display: flex;

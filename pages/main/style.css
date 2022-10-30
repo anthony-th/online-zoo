@@ -73,6 +73,7 @@ html {
   font-size: 19.0145px;
   line-height: 120%;
   text-align: center;
+  padding: 3.55px 0 0 1px;
 }
 
 .list {
@@ -116,7 +117,7 @@ html {
 }
 
 .watch-you {
-  background: url("../../assets/images/giantpanda.jpg") no-repeat;
+  background: url(../../assets/images/giantpanda.jpg) no-repeat;
   padding: 86px 0 100px;
   background-position: center;
   background-position-y: -80px;
@@ -135,7 +136,7 @@ html {
 }
 .watch-you .watch-you__container .watch-you__block .watch-you__title {
   font-weight: 700;
-  font-size: 106.496px;
+  font-size: 106.5px;
   line-height: 75%;
   text-align: center;
   text-transform: uppercase;
@@ -143,13 +144,16 @@ html {
   z-index: 3;
   height: 400px;
 }
-.watch-you .watch-you__container .watch-you__block .ellipse {
-  position: absolute;
+.watch-you .watch-you__container .watch-you__block .watch-you__title::before {
+  content: "";
   width: 465px;
   height: 465px;
-  right: 113px;
-  bottom: 123px;
-  border-radius: 468px;
+  border-radius: 465px;
+  position: absolute;
+  left: -73px;
+  top: -74px;
+  z-index: -1;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
 
 .yellow {
@@ -311,7 +315,7 @@ html {
 }
 .pets .pets__container .cards .card:hover .card__text {
   position: absolute;
-  bottom: 44px;
+  bottom: 74px;
   right: 35px;
   align-items: end;
 }
@@ -449,6 +453,19 @@ html {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: relative;
+}
+.pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card:first-child::before, .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../assets/svg/sparrow.svg);
+  width: 71px;
+  height: 37px;
+  left: calc(100% + 29px);
+  top: 59px;
+}
+.pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card:nth-child(2)::before {
+  top: 55px;
 }
 .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card .pick-and-feed__card-block {
   width: 168px;
@@ -459,15 +476,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-}
-.pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card .pick-and-feed__card-block .sparrow {
-  position: absolute;
-  right: -102px;
-  top: calc(50% - 23px);
-}
-.pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card .pick-and-feed__card-block:nth-child(2) .sparrow {
-  top: calc(50% - 27px);
 }
 .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card .pick-and-feed__card-subtitle {
   font-weight: 400;
@@ -516,6 +524,8 @@ html {
   display: flex;
   gap: 29px;
   margin-bottom: 22px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .testimonials .testimonials__container .testimonials__cards .testimonials__card {
   position: relative;
@@ -785,7 +795,7 @@ html {
 }
 .footer .footer__container .footer__right .subtitle {
   color: #FFFFFF;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 .footer .footer__container .footer__right .input__block {
   display: flex;
