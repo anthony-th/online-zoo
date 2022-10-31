@@ -135,6 +135,16 @@ html {
   color: #FE9013;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .active {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -207,7 +217,7 @@ html {
         gap: 89px;
         display: flex;
         justify-content: center;
-        margin-bottom: 80px;
+        margin-bottom: 87px;
         .animals-widget {
           width: 284px;
           height: 246px;
@@ -246,17 +256,186 @@ html {
           }
         }
       }
-      .progress-bar {
-        width: 100%;
-        height: 40px;
-        &::before {
-          content: "Amount";
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .progress-bar {
+          width: 100%;
+          height: 27px;
+          background: #404950;
+          border-radius: 2px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          .progress-bar__main-block {
+            width: calc(100% - 56px);
+            display: flex;
+            // gap: 120px;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            &::before {
+              content: "";
+              background: #72828E;
+              width: 100%;
+              height: 2px;
+              border: none;
+              outline: none;
+              position: absolute;
+            }
+          }
+          span {
+            width: 10px;
+            height: 10px;
+            background: #FFEE2E;
+            border-radius: 10px;
+            position: relative;
+            z-index: 10;
+            .progress-bar__label {
+              font-weight: 500;
+              font-size: 26px;
+              line-height: 140%;
+              text-transform: uppercase;
+              color: #333B41;
+            }
+            &::before {
+              content: "";
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              left: calc(50% - 40px/2);
+              top: calc(50% - 40px/2);
+            }
+            &:nth-child(3) {
+              &::before {
+                content: "";
+                background: url(../../assets/svg/roller-icon.svg);
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                left: calc(50% - 40px/2);
+                top: calc(50% - 40px/2);
+              }
+            }
+            &:hover {
+              background: #FE9013;
+              transition: 0.5s;
+            }
+          }
+          &::before {
+            content: "Amount";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #000000;
+            position: absolute;
+            bottom: 39px;
+            left: 0;
+          }
+        }
+        .progress-text {
+          padding: 0 22px 0 15px;
+          display: flex;
+          justify-content: space-between;
+          gap: 58px;
+          margin-bottom: 38px;
+          .progress-text__block {
+            width: 29px;
+            height: 36px;
+            // margin-right: 12px;
+            position: relative;
+            .h5 {
+              font-weight: 500;
+              font-size: 26px;
+              line-height: 140%;
+              text-transform: uppercase;
+              color: #333B41;
+            }
+            &::after {
+              content: "";
+              background: url(../../assets/svg/dollar.svg);
+              width: 10px;
+              height: 20px;
+              position: absolute;
+              bottom: 6px;
+              left: -12px;
+            }
+          }
+          .or3 {
+            .h5 {
+              color: #FE9013;
+            }
+            &::after {
+              filter: invert(53%) sepia(98%) saturate(1094%) hue-rotate(351deg) brightness(105%) contrast(99%);
+            }
+          }
+        }
+        .anotheramount__label {
+          margin: 0 auto;
+          position: relative;
+          margin-bottom: 13px;
+          &::before {
+            content: "";
+            background: url(../../assets/svg/dollar.svg);
+            width: 10px;
+            height: 20px;
+            position: absolute;
+            top: calc(50% - 10px);
+            right: 10px;
+            filter: invert(66%) sepia(9%) saturate(134%) hue-rotate(163deg) brightness(89%) contrast(87%);
+          }
+          .another-amount-input {
+            width: 268px;
+            height: 54px;
+            border: 1px solid #929699;
+            border-radius: 2px;
+            background: transparent;
+            padding-left: 9px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #929699;
+          }
+        }
+        .radio-buttons {
+          margin: 0 auto;
+          display: flex;
+          gap: 50px;
+          margin-bottom: 19px;
+          .radio-button {
+            width: 84px;
+            height: 21px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .radio-label {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140%;
+              color: #333B41;
+            }
+            input {
+              width: 16px;
+              height: 16px;
+              border: 1px solid #FE9013;
+            }
+          }
+        }
+        .btn2 {
+          border-radius: 25px;
+          margin: 0 auto;
+          border: none;
+          margin-bottom: 18.02px;
+        }
+        .main-text {
           font-weight: 400;
           font-size: 16px;
           line-height: 140%;
-          color: #000000;
-          position: relative;
-          bottom: 32px;
+          color: #333B41;
+          text-align: center;
         }
       }
     }
