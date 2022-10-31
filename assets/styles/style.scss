@@ -638,12 +638,28 @@ html {
         cursor: pointer;
         -webkit-appearance: none;
         appearance: none;
+        &:hover {
+          background: #E47209;
+        }
+        &:active {
+          background: #4B9200;
+        }
       }
-      &::-webkit-slider-thumb:hover {
-        background: #E47209;
-      }
-      &::-webkit-slider-thumb:active {
-        background: #4B9200;
+      &::-moz-range-thumb {
+        border-radius: 5px;
+        height: 5px;
+        width: 115.19px;
+        background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+        border: none;
+        cursor: pointer;
+        -webkit-appearance: none;
+        appearance: none;
+        &:hover {
+          background: #E47209;
+        }
+        &:active {
+          background: #4B9200;
+        }
       }
     }
   }
