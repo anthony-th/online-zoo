@@ -453,6 +453,8 @@ input[type=number] {
           border-radius: 25px;
           margin: 12px auto 30.02px;
           border: none;
+          position: relative;
+          left: calc(0% + 5px);
         }
         .main-text {
           font-weight: 400;
@@ -493,7 +495,7 @@ input[type=number] {
         margin-bottom: 24px;
         .title {
           position: relative;
-          top: -0.55px;
+          top: 0;
           padding-bottom: 5px;
         }
         .logo__img {
