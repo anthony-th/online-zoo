@@ -310,30 +310,19 @@ input[type=number] {
   outline: none;
   position: absolute;
 }
-.pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar span {
+.pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar .progress-bar__main-block .progress-bar__radio-button {
   width: 10px;
   height: 10px;
   background: #FFEE2E;
   border-radius: 10px;
   position: relative;
   z-index: 10;
+  appearance: none;
 }
-.pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar span .progress-bar__label {
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 140%;
-  text-transform: uppercase;
-  color: #333B41;
+.pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar .progress-bar__main-block .progress-bar__radio-button:checked {
+  background: #FE9013;
 }
-.pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar span::before {
-  content: "";
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: calc(50% - 20px);
-  top: calc(50% - 20px);
-}
-.pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar span:nth-child(3)::before {
+.pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar .progress-bar__main-block .progress-bar__radio-button:checked::before {
   content: "";
   background: url(../../assets/svg/roller-icon.svg);
   width: 40px;
@@ -342,7 +331,15 @@ input[type=number] {
   left: calc(50% - 20px);
   top: calc(50% - 20px);
 }
-.pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar span:hover {
+.pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar .progress-bar__main-block .progress-bar__radio-button::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+}
+.pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar .progress-bar__main-block .progress-bar__radio-button:hover {
   background: #FE9013;
   transition: 0.5s;
 }
@@ -367,7 +364,7 @@ input[type=number] {
   height: 36px;
   position: relative;
 }
-.pickfeed .pickfeed__container .pickfeed__main-block form .progress-text .progress-text__block .h5 {
+.pickfeed .pickfeed__container .pickfeed__main-block form .progress-text .progress-text__block .progress-bar__label {
   font-weight: 500;
   font-size: 26px;
   line-height: 140%;
@@ -380,10 +377,10 @@ input[type=number] {
   width: 10px;
   height: 20px;
   position: absolute;
-  bottom: 6px;
+  bottom: 7px;
   left: -12px;
 }
-.pickfeed .pickfeed__container .pickfeed__main-block form .progress-text .or3 .h5 {
+.pickfeed .pickfeed__container .pickfeed__main-block form .progress-text .or3 .progress-bar__label {
   color: #FE9013;
 }
 .pickfeed .pickfeed__container .pickfeed__main-block form .progress-text .or3::after {
@@ -520,7 +517,7 @@ input[type=number] {
   position: relative;
 }
 .footer .footer__container .footer__left .social .social__card:nth-child(2), .footer .footer__container .footer__left .social .social__card:nth-child(3) {
-  align-items: center;
+  align-items: baseline;
 }
 .footer .footer__container .footer__left .social .social__card:hover .social__title {
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
