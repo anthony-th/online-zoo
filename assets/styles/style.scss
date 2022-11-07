@@ -402,7 +402,7 @@ html {
 }
 
 .btn {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 140%;
   text-transform: uppercase;
@@ -562,7 +562,7 @@ html {
 }
 
 .testimonials {
-  padding: 141px 0 264px;
+  padding: 141px 0 266px;
   background: url(../../assets/images/leav_foto.png) no-repeat;
   background-position: bottom -132px right -161.48px;
   .testimonials__container {
@@ -582,10 +582,10 @@ html {
         position: relative;
         width: 268px;
         height: 391px;
-        padding: 16px 12px 19px 17px;
+        padding: 17px 12px 19px 17px;
         display: flex;
         flex-direction: column;
-        gap: 11px;
+        gap: 10px;
         .card__top {
           height: 38px;
           display: flex;
@@ -734,7 +734,7 @@ html {
   border-radius: 5px;
   position: absolute;
   left: 0;
-  bottom: -84px;
+  bottom: -87px;
   text-decoration: none;
 }
 
@@ -770,11 +770,11 @@ html {
         }
         .title {
           position: relative;
-          top: -1.55px;
+          top: -3.55px;
         }
         .logo__img {
-          left: 8.19px;
-          bottom: 5.79px;
+          left: 9.19px;
+          bottom: 8.79px;
         }
       }
       .btn2 {
@@ -868,7 +868,7 @@ html {
       }
       .subtitle {
         color: #FFFFFF;
-        margin-bottom: 14px;
+        margin-bottom: 13px;
       }
       .input__block {
         display: flex;
