@@ -315,7 +315,6 @@ input[type=number] {
               z-index: 10;
               appearance: none;
               &:checked {
-                background: #FE9013;
                 &::before {
                   content: "";
                   background: url(../../assets/svg/roller-icon.svg);
