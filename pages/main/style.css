@@ -360,6 +360,9 @@ html {
   right: 0;
   bottom: 2px;
 }
+.pets .pets__container .cards .card:nth-child(7) {
+  display: none;
+}
 .pets .pets__container .cards .pick-and-feed__arrows {
   display: flex;
   gap: 1198px;

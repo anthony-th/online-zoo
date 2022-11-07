@@ -374,6 +374,9 @@ html {
             }
           }
         }
+        &:nth-child(7) {
+          display: none;
+        }
       }
       .pick-and-feed__arrows {
         display: flex;
