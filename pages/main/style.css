@@ -1,8 +1,26 @@
 @font-face {
   font-family: "Roboto";
-  src: url(../../assets/fonts/Roboto.woff2) format("woff2");
+  src: url("../../assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
-  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 * {
   margin: 0;
@@ -121,6 +139,7 @@ html {
   padding: 86px 0 100px;
   background-position: center;
   background-position-y: -80px;
+  background-size: cover;
 }
 .watch-you .watch-you__container {
   justify-content: end;
@@ -405,13 +424,16 @@ html {
   gap: 10px;
   margin-bottom: 60px;
 }
+.pick-and-feed .pick-and-feed__container .pick-and-feed__text p:last-child {
+  font-weight: 400;
+}
 .pick-and-feed .pick-and-feed__container .pick-and-feed__text .pick-and-feed__title {
   font-weight: 400;
   font-size: 48px;
   line-height: 120%;
   text-align: center;
   color: #FE9013;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 .pick-and-feed .pick-and-feed__container .pick-and-feed__text .pick-and-feed__main-text {
   font-weight: 500;
@@ -431,7 +453,6 @@ html {
 }
 .pick-and-feed .pick-and-feed__container .pick-and-feed__text .pick-and-feed__main-text:nth-child(2n-1) {
   width: 1061px;
-  letter-spacing: 0.005em;
 }
 .pick-and-feed .pick-and-feed__container .pick-and-feed__text .subtitle {
   margin-bottom: 30px;
@@ -531,7 +552,7 @@ html {
   position: relative;
   width: 268px;
   height: 391px;
-  padding: 16px 13px 19px 16px;
+  padding: 16px 12px 19px 17px;
   display: flex;
   flex-direction: column;
   gap: 11px;
@@ -546,12 +567,11 @@ html {
 .testimonials .testimonials__container .testimonials__cards .testimonials__card .card__top .user-icon {
   width: 37px;
   height: 37px;
-  padding-bottom: 2px;
 }
 .testimonials .testimonials__container .testimonials__cards .testimonials__card .card__top .testimonials__card-title {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 5px;
 }
 .testimonials .testimonials__container .testimonials__cards .testimonials__card .card__top .testimonials__card-title .user-title {
   font-weight: 400;
@@ -570,7 +590,6 @@ html {
   width: 237px;
   height: 309px;
   overflow: hidden;
-  letter-spacing: -0.008em;
 }
 .testimonials .testimonials__container .testimonials__cards .testimonials__card .testimals__text-block .smallParagraph {
   bottom: auto;
