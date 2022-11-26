@@ -304,6 +304,10 @@
         .logo {
           margin-bottom: 0;
           height: 53px;
+          .logo__img {
+            left: 11.19px;
+            bottom: 9.79px;
+          }
         }
         .social {
           position: absolute;
@@ -335,6 +339,7 @@
         }
         .footer__copyright {
           gap: 11px;
+          right: 1px;
         }
       }
     }

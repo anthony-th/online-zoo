@@ -1388,6 +1388,10 @@ html {
     margin-bottom: 0;
     height: 53px;
   }
+  .footer .footer__container .footer__left .logo .logo__img {
+    left: 11.19px;
+    bottom: 9.79px;
+  }
   .footer .footer__container .footer__left .social {
     position: absolute;
     right: 0;
@@ -1414,6 +1418,148 @@ html {
   }
   .footer .footer__container .footer__right .footer__copyright {
     gap: 11px;
+    right: 1px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 0 10px;
+  }
+  .watch-you {
+    padding: 75.04px 0 44px;
+    background-position-y: 33px;
+    background-size: 385px 190px, cover;
+  }
+  .watch-you .watch-you__container {
+    right: 0;
+    padding: 0 10px;
+  }
+  .watch-you .watch-you__container .watch-you__block {
+    width: 128.13px;
+    height: 102.44px;
+  }
+  .watch-you .watch-you__container .watch-you__block .watch-you__title {
+    font-size: 28px;
+  }
+  .watch-you .watch-you__container .watch-you__block .watch-you__title::before {
+    width: 119.09px;
+    height: 119.09px;
+    top: -19px;
+    left: -19px;
+  }
+  .watch-you .watch-you__container .watch-you__block .btn1 {
+    bottom: -118px;
+    left: -170px;
+  }
+  .the-backtage {
+    background-position: top 39px right -80px;
+    background-size: 112px 215px, cover;
+    padding: 105px 1px 39px 0;
+  }
+  .the-backtage .the-backtage__container .the-backtage__block {
+    gap: 9px;
+  }
+  .the-backtage .the-backtage__container .the-backtage__block .h2 {
+    font-size: 24px;
+    padding: 0;
+  }
+  .the-backtage .the-backtage__container .the-backtage__block .the-backtage__text {
+    padding: 0;
+    padding-left: 2px;
+    line-height: 132%;
+  }
+  .the-backtage .the-backtage__container .the-backtage__block .the-backtage__text:last-child {
+    line-height: 137%;
+    left: -2px;
+  }
+  .the-backtage .the-backtage__container .the-backtage__block .subtitle {
+    padding-left: 2px;
+    margin-top: 12px;
+  }
+  .pets {
+    padding: 0 0 60px;
+    background: url(../../assets/images/palm_foto.png) bottom 0px left -73px/132px 71px no-repeat, url(../../assets/images/strelitzia.png) bottom -4px right -21px/92px 72px no-repeat;
+  }
+  .pets .pets__container {
+    gap: 20px;
+  }
+  .pets .pets__container .cards {
+    gap: 20px;
+  }
+  .pets .pets__container .cards .pick-and-feed__arrows {
+    display: none;
+  }
+  .pick-and-feed {
+    padding: 20px 10px;
+  }
+  .pick-and-feed .pick-and-feed__container {
+    padding: 21px 0 40px;
+  }
+  .pick-and-feed .pick-and-feed__container .pick-and-feed__text {
+    padding: 0;
+    margin-bottom: 19px;
+  }
+  .pick-and-feed .pick-and-feed__container .pick-and-feed__text .pick-and-feed__title {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .pick-and-feed .pick-and-feed__container .pick-and-feed__text .subtitle {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    line-height: 121%;
+    position: relative;
+    left: -1px;
+  }
+  .pick-and-feed .pick-and-feed__container .pick-and-feed__text .pick-and-feed__main-text {
+    display: none;
+  }
+  .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block {
+    gap: 11px;
+  }
+  .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .h3 {
+    font-size: 24px;
+    margin-bottom: 7px;
+  }
+  .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards {
+    gap: 20px;
+    flex-direction: column;
+    right: 0;
+  }
+  .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card {
+    gap: 11px;
+    height: 222px;
+  }
+  .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card:first-child::before {
+    left: 101px;
+    top: 227px;
+    transform: rotate(83deg);
+  }
+  .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card:nth-child(2) {
+    gap: 10px;
+    height: 231px;
+  }
+  .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card:nth-child(2) .pick-and-feed__card-subtitle {
+    line-height: 137%;
+  }
+  .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card:nth-child(2)::before {
+    left: 100px;
+    top: 234px;
+    transform: rotate(84deg);
+  }
+  .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card:nth-child(3) .pick-and-feed__card-subtitle {
+    line-height: 137%;
+  }
+  .testimonials {
+    padding: 28px 0 156px;
+  }
+  .testimonials .testimonials__container .h3 {
+    font-size: 24px;
+    margin-bottom: 19px;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card {
+    width: 299px;
+    padding: 11px 29px 12px 18px;
   }
 }
 
