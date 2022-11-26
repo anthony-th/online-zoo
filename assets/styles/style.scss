@@ -613,7 +613,8 @@ html {
           padding-right: 14px;
         }
         &:nth-child(5),
-        &:nth-child(6) {
+        &:nth-child(6),
+        &:nth-child(7) {
           display: none;
         }
         &::before {
