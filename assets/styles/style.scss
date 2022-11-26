@@ -631,6 +631,10 @@ html {
         &:nth-child(3) {
           padding-right: 14px;
         }
+        &:nth-child(5),
+        &:nth-child(6) {
+          display: none;
+        }
         &::before {
           content: "";
           position: absolute;
@@ -976,9 +980,27 @@ html {
           width: 294px;
           height: 354px;
           .card__block {
+            padding: 9px 8px 14px 15px;
             .card__text {
               max-width: 231px;
+              gap: 2px;
             }
+          }
+          &:nth-child(3) {
+            order: 4;
+          }
+          &:nth-child(4) {
+            display: none;
+          }
+          &:nth-child(5) {
+            order: 3;
+          }
+          &:nth-child(6) {
+            order: 6;
+          }
+          &:nth-child(7) {
+            display: flex;
+            order: 5;
           }
         }
         .pick-and-feed__arrows {
@@ -1043,11 +1065,53 @@ html {
         margin-bottom: 18px;
         .testimonials__card {
           width: 293px;
-          &:nth-child(3) {
+          &:first-child {
+            padding: 15px 18px 19px 16px;
+            .testimals__text-block {
+              width: 255px;
+            }
+          }
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
+            display: none;
+          }
+          &:nth-child(5) {
+            display: flex;
+            order: 3;
+            padding: 15px 21px 19px 16px;
             width: 294px;
+            .card__top {
+              .testimonials__card-title {
+                gap: 3px;
+              }
+            }
+            .testimals__text-block {
+              width: 257px;
+              .smallParagraph {
+                &:first-child {
+                  text-indent: 5px;
+                }
+              }
+            }
           }
           &:last-child {
-            display: none;
+            display: flex;
+            order: 2;
+            padding: 10px 27px 16px 16px;
+            gap: 16px;
+            text-indent: 3px;
+            .testimals__text-block {
+              width: 250px;
+            }
+            .card__top {
+              gap: 2px;
+            }
+            .smallParagraph {
+              &:last-child {
+                text-indent: 0px;
+              }
+            }
           }
         }
       }
@@ -1064,7 +1128,8 @@ html {
       }
       .footer__center {
         position: relative;
-        left: -5px;
+        left: -6px;
+        bottom: -1px;
         // bottom: 2px;
         .nav {
           .list {
@@ -1080,10 +1145,15 @@ html {
       }
       .footer__right {
         position: relative;
-        right: 60px;
+        right: 59px;
         .subscribe-block {
           position: relative;
           right: 34px;
+        }
+        .footer__copyright {
+          position: relative;
+          right: 2px;
+          bottom: -1px;
         }
       }
     }
