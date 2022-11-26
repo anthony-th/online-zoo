@@ -1,5 +1,6 @@
 @media screen and (max-width: 640px) {
   .header {
+    position: fixed;
     .header__container {
       padding: 2.29px 0 2.68px;
       .header__left {
@@ -53,8 +54,8 @@
     max-width: 600px;
   }
   .watch-you {
-    padding: 48.04px 0 87px;
-    background-position-y: -32px;
+    padding: 83.04px 0 87px;
+    background-position-y: 3px;
     background-size: 763px 370px, cover;
     .watch-you__container {
       position: relative;

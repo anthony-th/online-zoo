@@ -608,7 +608,7 @@ html {
 .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(3) {
   padding-right: 14px;
 }
-.testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(5), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(6), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(7) {
+.testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(5), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(6), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(7), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(8) {
   display: none;
 }
 .testimonials .testimonials__container .testimonials__cards .testimonials__card::before {
@@ -1096,6 +1096,9 @@ html {
   }
 }
 @media screen and (max-width: 640px) {
+  .header {
+    position: fixed;
+  }
   .header .header__container {
     padding: 2.29px 0 2.68px;
   }
@@ -1148,8 +1151,8 @@ html {
     max-width: 600px;
   }
   .watch-you {
-    padding: 48.04px 0 87px;
-    background-position-y: -32px;
+    padding: 83.04px 0 87px;
+    background-position-y: 3px;
     background-size: 763px 370px, cover;
   }
   .watch-you .watch-you__container {
