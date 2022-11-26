@@ -58,6 +58,9 @@ html {
   align-items: center;
   width: 617px;
 }
+.header .header__container .header__left .burger-menu {
+  display: none;
+}
 
 .logo {
   width: 82px;
@@ -1090,6 +1093,122 @@ html {
     position: relative;
     right: 2px;
     bottom: -1px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header .header__container {
+    padding: 2.29px 0 2.68px;
+  }
+  .header .header__container .header__left {
+    justify-content: space-between;
+  }
+  .header .header__container .header__left .logo {
+    width: 46.86px;
+    height: 29.03px;
+    border: none;
+  }
+  .header .header__container .header__left .logo .title {
+    font-size: 12.2899px;
+    padding: 1.5px 0 0;
+    margin: 0;
+  }
+  .header .header__container .header__left .logo .logo__img {
+    width: 4.54px;
+    height: 13.56px;
+    left: 4.19px;
+  }
+  .header .header__container .header__left .nav {
+    display: none;
+  }
+  .header .header__container .header__left .burger-menu {
+    display: flex;
+    width: 18px;
+    height: 10px;
+  }
+  .header .header__container .header__left .burger-menu .burger-lines {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .header .header__container .header__left .burger-menu .burger-lines .burger-line {
+    height: 2px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+  }
+  .header .header__container .copyright {
+    display: none;
+  }
+  .container {
+    max-width: 600px;
+  }
+  .watch-you {
+    padding: 48.04px 0 87px;
+    background-position-y: -32px;
+    background-size: 763px 370px, cover;
+  }
+  .watch-you .watch-you__container {
+    position: relative;
+    right: -5.23px;
+    padding: 0;
+  }
+  .watch-you .watch-you__container .watch-you__block {
+    width: 255.64px;
+    height: 204.38px;
+  }
+  .watch-you .watch-you__container .watch-you__block .watch-you__title {
+    font-size: 54.2894px;
+  }
+  .watch-you .watch-you__container .watch-you__block .watch-you__title::before {
+    width: 237.6px;
+    height: 237.6px;
+    top: -38px;
+    left: -38px;
+  }
+  .watch-you .watch-you__container .watch-you__block .btn1 {
+    position: absolute;
+    bottom: -47px;
+    left: -348px;
+  }
+  .the-backtage {
+    background: url(../../assets/images/flower_foto1.png) no-repeat;
+    background-position: top -5px right -97px;
+    background-size: 223px 476px, cover;
+    padding: 60px 1px 79px 0;
+  }
+  .the-backtage .the-backtage__container .the-backtage__img {
+    display: none;
+  }
+  .the-backtage .the-backtage__container .the-backtage__block {
+    gap: 20px;
+  }
+  .the-backtage .the-backtage__container .the-backtage__block .h2 {
+    padding-left: 5px;
+  }
+  .the-backtage .the-backtage__container .the-backtage__block .subtitle {
+    margin: 10px 0 0;
+    padding-left: 5px;
+  }
+  .the-backtage .the-backtage__container .the-backtage__block .the-backtage__text {
+    padding-right: 107px;
+    line-height: 135%;
+  }
+  .the-backtage .the-backtage__container .the-backtage__block .the-backtage__text:last-child {
+    position: relative;
+    line-height: 136%;
+  }
+  .pets .pets__container .cards .card {
+    width: 285px;
+    height: 332px;
+  }
+  .pets .pets__container .cards .pick-and-feed__arrows {
+    top: 346px;
+    gap: 30px;
   }
 }
 
