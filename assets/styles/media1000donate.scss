@@ -1,0 +1,123 @@
+@media screen and (max-width: 1599.99px) {
+  .container {
+    max-width: 940px;
+  }
+  .header {
+    .header__container {
+      .header__left {
+        .nav {
+          .list {
+            gap: 48px;
+          }
+        }
+      }
+    }
+  }
+  .watch-you {
+    height: 390px;
+    background-size: inherit;
+    background-position-x: -175px;
+  }
+  .pickfeed {
+    padding: 40px 0 30px;
+    .pickfeed__container {
+      .h3 {
+        padding-right: 175px;
+        margin-bottom: 20px;
+      }
+      .or3 {
+        margin-bottom: 30px;
+      }
+      .pickfeed__main-block {
+        padding: 19px 65px 45px;
+        .h2 {
+          text-align: center;
+          padding-left: 0;
+          position: relative;
+          left: -7px;
+          margin-bottom: 10px;
+        }
+        .subtitle {
+          white-space: nowrap;
+          position: relative;
+          left: -18px;
+        }
+        .top-block {
+          position: relative;
+          left: -2px;
+          .number-block {
+            .amount-of-days {
+              .amount-titles {
+                top: 2px;
+                position: relative;
+              }
+            }
+          }
+        }
+        form {
+          .progress-bar {
+            &::before {
+              bottom: 43px;
+              left: 0px;
+            }
+            .progress-bar__main-block {
+              width: calc(100% - 22px);
+              .progress-bar__radio-button {
+                &:first-child {
+                  display: none;
+                }
+              }
+            }
+          }
+          .progress-text {
+            .progress-text__block {
+              &:first-child {
+                display: none;
+              }
+            }
+          }
+          .anotheramount__label {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .footer__container {
+      gap: 0;
+      .footer__left {
+        margin-right: 0;
+      }
+      .footer__center {
+        position: relative;
+        left: 5px;
+        bottom: -1px;
+        .nav {
+          .list {
+            gap: 48px;
+            .list__item {
+              word-wrap: none;
+              &:last-child {
+                width: 80px;
+              }
+            }
+          }
+        }
+      }
+      .footer__right {
+        position: relative;
+        right: 59px;
+        .subscribe-block {
+          position: relative;
+          right: 34px;
+        }
+        .footer__copyright {
+          position: relative;
+          right: 2px;
+          bottom: -1px;
+        }
+      }
+    }
+  }
+}
