@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 639px) {
   body {
     min-width: 320px;
   }
@@ -14,8 +14,11 @@
     padding: 75.04px 0 44px;
     background-position-y: 33px;
     background-size: 385px 190px, cover;
-    @media screen and (min-width: 384px) and (max-width: 480px) {
-      background-size: 100% 220px, cover;
+    @media screen and (min-width: 480px) and (max-width: 534px) {
+      background-size: 100% 240px, cover;
+    }
+    @media screen and (min-width: 535px) and (max-width: 639px) {
+      background-size: 100% 270px, cover;
     }
     .watch-you__container {
       justify-content: center;
