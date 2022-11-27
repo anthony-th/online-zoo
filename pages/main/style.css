@@ -1325,14 +1325,14 @@ html {
     top: -1px;
   }
   .testimonials .testimonials__container .testimonials__cards .testimonials__card .testimals__text-block {
-    width: 566px;
+    max-width: 566px;
     padding-left: 1px;
   }
   .testimonials .testimonials__container .testimonials__cards .testimonials__card:first-child {
     padding: 15px 18px 12px 16px;
   }
   .testimonials .testimonials__container .testimonials__cards .testimonials__card:first-child .testimals__text-block {
-    width: 566px;
+    max-width: 566px;
     padding-left: 1px;
   }
   .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(6) {
@@ -1341,7 +1341,7 @@ html {
     gap: 11px;
   }
   .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(6) .testimals__text-block {
-    width: 566px;
+    max-width: 566px;
     padding-left: 1px;
   }
   .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(6) .testimals__text-block .smallParagraph:first-child {
@@ -1358,14 +1358,14 @@ html {
   .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(7) {
     display: flex;
     padding: 15px 29px 8px 18px;
-    width: 600px;
+    max-width: 600px;
   }
   .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(7) .card__top {
     position: relative;
     left: -6px;
   }
   .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(7) .testimals__text-block {
-    width: 566px;
+    max-width: 566px;
     padding-left: 1px;
   }
   .testimonials .testimonials__container .progress-bar {
@@ -1557,15 +1557,123 @@ html {
     line-height: 137%;
   }
   .testimonials {
-    padding: 28px 0 156px;
+    padding: 28px 0 136px;
+    background: url(../../assets/images/leav_foto1.png) bottom -30px right 0px no-repeat;
   }
   .testimonials .testimonials__container .h3 {
     font-size: 24px;
     margin-bottom: 19px;
   }
+  .testimonials .testimonials__container .testimonials__cards {
+    margin-bottom: 8px;
+  }
   .testimonials .testimonials__container .testimonials__cards .testimonials__card {
+    gap: 6px;
     width: 299px;
     padding: 11px 29px 12px 18px;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card .card__top {
+    left: -4px;
+    top: -4px;
+    gap: 6px;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card .card__top .testimonials__card-title {
+    gap: 4px;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card:first-child {
+    padding: 15px 18px 12px 17px;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card:first-child .card__top .testimonials__card-title .user-subtitle .smallParagraph {
+    margin: 0;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card:first-child .testimals__text-block .smallParagraph:first-child {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card:first-child .testimals__text-block .smallParagraph:last-child {
+    display: none;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(6) .card__top .testimonials__card-title {
+    position: relative;
+    top: 1px;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(6) .testimals__text-block {
+    width: 255px;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(6) .testimals__text-block .smallParagraph:first-child {
+    max-width: 279px;
+    text-indent: 0;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(7) {
+    padding: 15px 29px 12px 18px;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(7) .card__top {
+    top: -5px;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(7) .card__top .testimonials__card-title {
+    position: relative;
+    top: 1px;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(7) .testimals__text-block {
+    width: 255px;
+  }
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(7) .testimals__text-block .smallParagraph:first-child {
+    max-width: 279px;
+    text-indent: 0;
+  }
+  .footer .footer__container {
+    padding: 8px 13px 20px 8px;
+    flex-direction: column;
+  }
+  .footer .footer__container .footer__left {
+    height: 204px;
+    gap: 12px;
+    align-items: center;
+  }
+  .footer .footer__container .footer__left .logo {
+    position: relative;
+    left: 8px;
+    width: 140px;
+    border: none;
+  }
+  .footer .footer__container .footer__left .logo .title {
+    text-align: center;
+  }
+  .footer .footer__container .footer__left .logo .logo__img {
+    top: 9px;
+    left: calc(59% - 10px);
+  }
+  .footer .footer__container .footer__left .social {
+    flex-direction: row;
+    order: 2;
+    margin-bottom: 18px;
+    gap: 30px;
+    position: relative;
+    left: 2px;
+  }
+  .footer .footer__container .footer__left .btn2 {
+    order: 3;
+  }
+  .footer .footer__container .footer__center {
+    position: static;
+    order: 3;
+    justify-content: center;
+    padding-left: 7px;
+  }
+  .footer .footer__container .footer__center .nav .list {
+    gap: 30px;
+  }
+  .footer .footer__container .footer__right {
+    position: static;
+    order: 2;
+    margin-bottom: 29px;
+  }
+  .footer .footer__container .footer__right .footer__copyright {
+    gap: 12px;
+    right: -2px;
+  }
+  .footer .footer__container .footer__right .footer__copyright p {
+    font-size: 15px;
   }
 }
 

@@ -144,16 +144,147 @@
     }
   }
   .testimonials {
-    padding: 28px 0 156px;
+    padding: 28px 0 136px;
+    background: url(../../assets/images/leav_foto1.png) bottom -30px right 0px no-repeat;
     .testimonials__container {
       .h3 {
         font-size: 24px;
         margin-bottom: 19px;
       }
       .testimonials__cards {
+        margin-bottom: 8px;
         .testimonials__card {
+          gap: 6px;
           width: 299px;
           padding: 11px 29px 12px 18px;
+          .card__top {
+            left: -4px;
+            top: -4px;
+            gap: 6px;
+            .testimonials__card-title {
+              gap: 4px;
+            }
+          }
+          &:first-child {
+            padding: 15px 18px 12px 17px;
+            .card__top {
+              .testimonials__card-title {
+                .user-subtitle {
+                  .smallParagraph {
+                    margin: 0;
+                  }
+                }
+              }
+            }
+            .testimals__text-block {
+              // overflow: hidden;
+              .smallParagraph {
+                &:first-child {
+                  text-overflow: ellipsis;
+                  // white-space: pre;
+                  overflow: hidden;
+                }
+                &:last-child {
+                  display: none;
+                }
+              }
+            }
+          }
+          &:nth-child(6) {
+            // padding: 15px 29px 12px 12px;
+            .card__top {
+              .testimonials__card-title {
+                position: relative;
+                top: 1px;
+              }
+            }
+            .testimals__text-block {
+              width: 255px;
+              .smallParagraph {
+                &:first-child {
+                  max-width: 279px;
+                  text-indent: 0;
+                }
+              }
+            }
+          }
+          &:nth-child(7) {
+            padding: 15px 29px 12px 18px;
+            .card__top {
+              top: -5px;
+              .testimonials__card-title {
+                position: relative;
+                top: 1px;
+              }
+            }
+            .testimals__text-block {
+              width: 255px;
+              .smallParagraph {
+                &:first-child {
+                  max-width: 279px;
+                  text-indent: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .footer__container {
+      padding: 8px 13px 20px 8px;
+      flex-direction: column;
+      .footer__left {
+        height: 204px;
+        gap: 12px;
+        align-items: center;
+        .logo {
+          position: relative;
+          left: 8px;
+          width: 140px;
+          border: none;
+          .title {
+            text-align: center;
+          }
+          .logo__img {
+            top: 9px;
+            left: calc(59% - 10px);
+          }
+        }
+        .social {
+          flex-direction: row;
+          order: 2;
+          margin-bottom: 18px;
+          gap: 30px;
+          position: relative;
+          left: 2px;
+        }
+        .btn2 {
+          order: 3;
+        }
+      }
+      .footer__center {
+        position: static;
+        order: 3;
+        justify-content: center;
+        padding-left: 7px;
+        .nav {
+          .list {
+            gap: 30px;
+          }
+        }
+      }
+      .footer__right {
+        position: static;
+        order: 2;
+        margin-bottom: 29px;
+        .footer__copyright {
+          gap: 12px;
+          right: -2px;
+          p {
+            font-size: 15px;
+          }
         }
       }
     }
