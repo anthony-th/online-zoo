@@ -881,7 +881,7 @@ html {
   color: #4B9200;
 }
 
-@media screen and (max-width: 1599.99px) {
+@media screen and (max-width: 1599px) {
   .header {
     z-index: 99;
   }
@@ -1328,7 +1328,7 @@ html {
 }
 @media screen and (max-width: 999px) {
   .testimonials {
-    padding: 61px 0 156px;
+    padding: 61px 0 155px;
     background: url(../../assets/images/leav_foto.png) bottom -69px right -83.47px/196px 204px no-repeat;
   }
   .testimonials .testimonials__container .testimonials__cards {
@@ -1394,7 +1394,7 @@ html {
   .testimonials .testimonials__container .btn2 {
     width: 240px;
     left: auto;
-    bottom: -76px;
+    bottom: -74px;
   }
 }
 @media screen and (max-width: 999px) {

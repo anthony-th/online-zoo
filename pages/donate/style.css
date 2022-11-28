@@ -220,6 +220,9 @@ input[type=number] {
   margin-bottom: 36px;
 }
 .pickfeed .pickfeed__container .h3 {
+  margin-bottom: 0px;
+}
+.pickfeed .pickfeed__container .or3 {
   margin-bottom: 50px;
 }
 .pickfeed .pickfeed__container .pickfeed__main-block {
@@ -620,7 +623,7 @@ input[type=number] {
   color: #4B9200;
 }
 
-@media screen and (max-width: 1599.99px) {
+@media screen and (max-width: 1599px) {
   .container {
     max-width: 940px;
   }
@@ -909,7 +912,7 @@ input[type=number] {
     right: 1px;
   }
 }
-@media screen and (max-width: 639.9px) {
+@media screen and (max-width: 639px) {
   body {
     min-width: 320px;
   }
