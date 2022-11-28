@@ -672,6 +672,11 @@ input[type=number] {
   .pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar .progress-bar__main-block .progress-bar__radio-button:first-child {
     display: none;
   }
+  .pickfeed .pickfeed__container .pickfeed__main-block form .progress-text {
+    padding: 12px 0px 0 0;
+    position: relative;
+    left: 12px;
+  }
   .pickfeed .pickfeed__container .pickfeed__main-block form .progress-text .progress-text__block:first-child {
     display: none;
   }
@@ -683,6 +688,9 @@ input[type=number] {
   }
   .footer .footer__container .footer__left {
     margin-right: 0;
+  }
+  .footer .footer__container .footer__left .social .social__card:nth-child(3) {
+    align-items: center;
   }
   .footer .footer__container .footer__center {
     position: relative;

@@ -70,6 +70,9 @@
             }
           }
           .progress-text {
+            padding: 12px 0px 0 0;
+            position: relative;
+            left: 12px;
             .progress-text__block {
               &:first-child {
                 display: none;
@@ -88,6 +91,13 @@
       gap: 0;
       .footer__left {
         margin-right: 0;
+        .social {
+          .social__card {
+            &:nth-child(3) {
+              align-items: center;
+            }
+          }
+        }
       }
       .footer__center {
         position: relative;
