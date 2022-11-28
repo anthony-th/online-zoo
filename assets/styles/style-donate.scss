@@ -56,6 +56,9 @@ html {
       gap: 63px;
       align-items: center;
       width: 617px;
+      .burger-menu {
+        display: none;
+      }
     }
   }
 }
@@ -631,6 +634,6 @@ input[type=number] {
 }
 
 @import './media1000donate.scss';
-// @import './media640donate.scss';
+@import './media640donate.scss';
 // @import './media480donate.scss';
 // @import './media320donate.scss';
