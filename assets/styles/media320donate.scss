@@ -15,6 +15,9 @@
     height: 222px;
     background-size: 767px 375px, cover;
     background-position: -149px -59px;
+    @media screen and (min-width: 535px) and (max-width: 639px) {
+      background-position: -127px -59px;
+    }
   }
 
   .pickfeed {

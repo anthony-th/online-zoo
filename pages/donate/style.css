@@ -927,6 +927,13 @@ input[type=number] {
     background-size: 767px 375px, cover;
     background-position: -149px -59px;
   }
+}
+@media screen and (max-width: 639px) and (min-width: 535px) and (max-width: 639px) {
+  .watch-you {
+    background-position: -127px -59px;
+  }
+}
+@media screen and (max-width: 639px) {
   .pickfeed {
     padding: 30px 0 21px;
   }
@@ -1037,6 +1044,8 @@ input[type=number] {
   .pickfeed .pickfeed__container .pickfeed__main-block form .main-text {
     white-space: nowrap;
   }
+}
+@media screen and (max-width: 639px) {
   .footer .footer__container {
     padding: 8px 13px 20px 8px;
     flex-direction: column;
