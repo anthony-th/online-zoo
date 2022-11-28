@@ -36,6 +36,13 @@
               </li>
             </ul>
           </nav>
+          <ul class="burger-menu">
+						<li class="burger-lines cursor-pointer">
+							<hr class="burger-line" />
+							<hr class="burger-line" />
+							<hr class="burger-line" />
+						</li>
+					</ul>
         </div>
         <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" class="link copyright cursor-pointer" target="_blank">Designed by ©</a>
       </div>
@@ -63,44 +70,44 @@
             <form>
               <div class="progress-bar">
                 <div class="progress-bar__main-block">
-                  <span class="cursor-pointer"></span>
-                  <span class="cursor-pointer"></span>
-                  <span class="cursor-pointer"></span>
-                  <span class="cursor-pointer"></span>
-                  <span class="cursor-pointer"></span>
-                  <span class="cursor-pointer"></span>
-                  <span class="cursor-pointer"></span>
-                  <span class="cursor-pointer"></span>
+                  <input class="cursor-pointer progress-bar__radio-button" value="5000" type="radio" name="numberAmount" id="number5000">
+                  <input class="cursor-pointer progress-bar__radio-button" value="2000" type="radio" name="numberAmount" id="number2000">
+                  <input class="cursor-pointer progress-bar__radio-button" value="1000" type="radio" name="numberAmount" id="number1000" checked>
+                  <input class="cursor-pointer progress-bar__radio-button" value="500" type="radio" name="numberAmount" id="number500">
+                  <input class="cursor-pointer progress-bar__radio-button" value="250" type="radio" name="numberAmount" id="number250">
+                  <input class="cursor-pointer progress-bar__radio-button" value="100" type="radio" name="numberAmount" id="number100">
+                  <input class="cursor-pointer progress-bar__radio-button" value="50" type="radio" name="numberAmount" id="number50">
+                  <input class="cursor-pointer progress-bar__radio-button" value="25" type="radio" name="numberAmount" id="number25">
                 </div>
               </div>
               <div class="progress-text">
                 <div class="progress-text__block">
-                  <h5 class="h5">5000</h5>
+                  <label class="progress-bar__label" for="number5000">5000</label>
                 </div>
                 <div class="progress-text__block">
-                  <h5 class="h5">2000</h5>
+                  <label class="progress-bar__label" for="number2000">2000</label>
                 </div>
                 <div class="progress-text__block or3">
-                  <h5 class="h5">1000</h5>
+                  <label class="progress-bar__label" for="number1000">1000</label>
                 </div>
                 <div class="progress-text__block">
-                  <h5 class="h5">500</h5>
+                  <label class="progress-bar__label" for="number500">500</label>
                 </div>
                 <div class="progress-text__block">
-                  <h5 class="h5">250</h5>
+                  <label class="progress-bar__label" for="number250">250</label>
                 </div>
                 <div class="progress-text__block">
-                  <h5 class="h5">100</h5>
+                  <label class="progress-bar__label" for="number100">100</label>
                 </div>
                 <div class="progress-text__block">
-                  <h5 class="h5">50</h5>
+                  <label class="progress-bar__label" for="number50">50</label>
                 </div>
                 <div class="progress-text__block">
-                  <h5 class="h5">25</h5>
+                  <label class="progress-bar__label" for="number25">25</label>
                 </div>
               </div>
               <label for="anotheramount" class="anotheramount__label">
-                <input id="anotheramount" value="" placeholder="Another amount" class="another-amount-input" type="number" min="0" max="9999" title="value > 0 and < 9999">
+                <input id="anotheramount" placeholder="Another amount" class="another-amount-input" name="anotheramount" type="number" value="" min="0" max="9999" step="1" title="value > 0 and < 9999" maxlength="4" minlength="1" pattern="[0-9]{4}">
               </label>
               <div class="radio-buttons">
                 <div class="radio-button">

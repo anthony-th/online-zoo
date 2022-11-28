@@ -1,0 +1,207 @@
+@media screen and (max-width: 639px) {
+  body {
+    min-width: 320px;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .header {
+    .header__container {
+      padding: 2.29px 10px 2.68px;
+    }
+  }
+
+  .watch-you {
+    height: 222px;
+    background-size: 767px 375px, cover;
+    background-position: -149px -59px;
+    @media screen and (min-width: 535px) and (max-width: 639px) {
+      background-position: -127px -59px;
+    }
+  }
+
+  .pickfeed {
+    padding: 30px 0 21px;
+    .pickfeed__container {
+      .or3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .pickfeed__subtitle {
+        line-height: 138%;
+      }
+      .pickfeed__main-block {
+        padding: 20px 0;
+        .h2 {
+          font-size: 24px;
+          margin-bottom: 9px;
+        }
+        .subtitle {
+          font-size: 16px;
+          line-height: 140%;
+        }
+        .top-block {
+          margin: 9px 0 34.5px;
+          gap: 50.19px;
+          left: 0;
+          padding: 0;
+          .number-block {
+            padding-top: 55px;
+            .amount-of-days {
+              width: 46.24px;
+              height: 32.71px;
+              .amount-titles {
+                font-size: 40.6015px;
+                top: 4px;
+              }
+              .x-icon {
+                width: 7.89px;
+                height: 7.89px;
+                right: -36px;
+                top: 18px;
+              }
+            }
+            .text {
+              font-size: 9.02255px;
+            }
+          }
+          .animals-widget {
+            width: 160.15px;
+            height: 138.72px;
+          }
+        }
+        form {
+          .progress-bar {
+            height: 14px;
+            .progress-bar__main-block {
+              width: calc(100% - 36px);
+              .progress-bar__radio-button {
+                height: 5px;
+                width: 5px;
+                &:nth-child(6) {
+                  &::before {
+                    background: url(../../assets/svg/roller_icon320.svg);
+                    width: 20px;
+                    height: 20px;
+                    left: calc(50% - 10px);
+                    top: calc(50% - 10px);
+                  }
+                }
+              }
+              &::before {
+                height: 1px;
+              }
+            }
+            &::before {
+              bottom: 22px;
+              left: 0px;
+            }
+          }
+          .progress-text {
+            padding: 5px 5px 0;
+            gap: 32px;
+            left: 9px;
+            .progress-text__block {
+              margin-bottom: 8px;
+              .progress-bar__label {
+                font-size: 13px;
+              }
+              &::after {
+                content: "";
+                background: url(../../assets/svg/dollar320.svg);
+                width: 5px;
+                height: 10px;
+                position: absolute;
+                bottom: 21px;
+                left: -7px;
+              }
+            }
+          }
+          .radio-buttons {
+            margin: 10px auto 14px;
+            .radio-button {
+              align-items: baseline;
+              input {
+                position: relative;
+                top: 2px;
+                left: -1px;
+              }
+            }
+          }
+          .main-text {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .footer__container {
+      padding: 8px 13px 20px 8px;
+      flex-direction: column;
+      .footer__left {
+        height: 204px;
+        gap: 12px;
+        align-items: center;
+        .logo {
+          position: relative;
+          left: 8px;
+          width: 140px;
+          border: none;
+          .title {
+            top: -2px;
+            text-align: center;
+          }
+          .logo__img {
+            top: 9px;
+            left: calc(59% - 10px);
+          }
+        }
+        .social {
+          flex-direction: row;
+          order: 2;
+          margin-bottom: 18px;
+          gap: 30px;
+          position: relative;
+          left: 2px;
+        }
+        .btn2 {
+          order: 3;
+        }
+      }
+      .footer__center {
+        position: static;
+        order: 3;
+        justify-content: center;
+        padding-left: 7px;
+        .nav {
+          .list {
+            gap: 30px;
+          }
+        }
+      }
+      .footer__right {
+        position: static;
+        order: 2;
+        margin-bottom: 31px;
+        .footer__copyright {
+          gap: 13px;
+          right: -2px;
+          p {
+            font-size: 15px;
+            font-weight: 100;
+            font-size: 15px;
+            line-height: 120%;
+            &:first-child {
+              letter-spacing: -0.005em;
+            }
+            &:nth-child(2) {
+              letter-spacing: -0.005em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

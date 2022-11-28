@@ -1,27 +1,5 @@
-@font-face {
-  font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
+@import './constants.scss';
+@import './fonts.scss';
 
 * {
   margin: 0;
@@ -56,6 +34,9 @@ html {
       gap: 63px;
       align-items: center;
       width: 617px;
+      .burger-menu {
+        display: none;
+      }
     }
   }
 }
@@ -190,6 +171,7 @@ html {
   font-size: 16px;
   line-height: 140%;
   text-transform: uppercase;  
+  transition: 0.3s;
 }
 
 .btn1,
@@ -320,6 +302,7 @@ html {
             bottom: 0;
             height: 100%;
             background:rgba(0, 0, 0, 0.5);
+            transition-duration: 0.7s;
           }
           .btn,
           .smallParagraph {
@@ -358,6 +341,7 @@ html {
           }
         }
         &:nth-child(6),
+        &:nth-child(7),
         &:nth-child(5),
         &:nth-child(2) {
           .card__icons {
@@ -372,6 +356,9 @@ html {
               }
             }
           }
+        }
+        &:nth-child(7) {
+          display: none;
         }
       }
       .pick-and-feed__arrows {
@@ -398,7 +385,7 @@ html {
 }
 
 .btn {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 140%;
   text-transform: uppercase;
@@ -558,7 +545,7 @@ html {
 }
 
 .testimonials {
-  padding: 141px 0 264px;
+  padding: 141px 0 266px;
   background: url(../../assets/images/leav_foto.png) no-repeat;
   background-position: bottom -132px right -161.48px;
   .testimonials__container {
@@ -578,10 +565,10 @@ html {
         position: relative;
         width: 268px;
         height: 391px;
-        padding: 16px 12px 19px 17px;
+        padding: 17px 12px 19px 17px;
         display: flex;
         flex-direction: column;
-        gap: 11px;
+        gap: 10px;
         .card__top {
           height: 38px;
           display: flex;
@@ -625,6 +612,12 @@ html {
         }
         &:nth-child(3) {
           padding-right: 14px;
+        }
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+          display: none;
         }
         &::before {
           content: "";
@@ -730,8 +723,9 @@ html {
   border-radius: 5px;
   position: absolute;
   left: 0;
-  bottom: -84px;
+  bottom: -87px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .footer {
@@ -766,11 +760,11 @@ html {
         }
         .title {
           position: relative;
-          top: -1.55px;
+          top: -3.55px;
         }
         .logo__img {
-          left: 8.19px;
-          bottom: 5.79px;
+          left: 9.19px;
+          bottom: 8.79px;
         }
       }
       .btn2 {
@@ -864,7 +858,7 @@ html {
       }
       .subtitle {
         color: #FFFFFF;
-        margin-bottom: 14px;
+        margin-bottom: 13px;
       }
       .input__block {
         display: flex;
@@ -905,3 +899,7 @@ html {
     }
   }
 }
+
+@import './media1000.scss';
+@import './media640.scss';
+@import './media320.scss';
