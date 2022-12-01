@@ -101,6 +101,7 @@ html {
   display: flex;
   gap: 58px;
   list-style-type: none;
+  align-items: center;
 }
 
 .cursor-pointer {
@@ -731,9 +732,19 @@ input[type=number] {
     position: fixed;
   }
   .header .header__container {
+    padding: 10.29px 0 10.68px;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 999px) and (max-width: 640px) {
+  .header .header__container {
     padding: 2.29px 0 2.68px;
   }
+}
+@media screen and (max-width: 999px) {
   .header .header__container .header__left {
+    width: 100%;
+    gap: 20px;
     justify-content: space-between;
   }
   .header .header__container .header__left .logo {
@@ -751,6 +762,16 @@ input[type=number] {
     height: 13.56px;
     left: 4.19px;
   }
+  .header .header__container .header__left .nav .list {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .header .header__container .copyright {
+    width: 137px;
+  }
+}
+@media screen and (max-width: 999px) and (max-width: 640px) {
   .header .header__container .header__left .nav {
     display: none;
   }
@@ -778,15 +799,21 @@ input[type=number] {
   .header .header__container .copyright {
     display: none;
   }
+}
+@media screen and (max-width: 999px) {
   .container {
     max-width: 600px;
   }
+}
+@media screen and (max-width: 999px) {
   .watch-you {
     height: 369px;
     background-position-y: -132px;
     background-size: 1373px 669px, cover;
     background-position-x: -273px;
   }
+}
+@media screen and (max-width: 999px) {
   .pickfeed {
     padding: 30px 0 47px;
   }
@@ -867,6 +894,8 @@ input[type=number] {
   .pickfeed .pickfeed__container .pickfeed__main-block form .main-text {
     padding-left: 0;
   }
+}
+@media screen and (max-width: 999px) {
   .footer .footer__container {
     position: relative;
     padding: 12px 0;
@@ -921,6 +950,33 @@ input[type=number] {
   }
   .header .header__container {
     padding: 2.29px 10px 2.68px;
+  }
+  .header .header__container .header__left .nav {
+    display: none;
+  }
+  .header .header__container .header__left .burger-menu {
+    display: flex;
+    width: 18px;
+    height: 10px;
+  }
+  .header .header__container .header__left .burger-menu .burger-lines {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .header .header__container .header__left .burger-menu .burger-lines .burger-line {
+    height: 2px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+  }
+  .header .header__container .copyright {
+    display: none;
   }
   .watch-you {
     height: 222px;

@@ -8,6 +8,35 @@
   .header {
     .header__container {
       padding: 2.29px 10px 2.68px;
+      .header__left {
+        .nav {
+          display: none;
+        }
+        .burger-menu {
+          display: flex;
+          width: 18px;
+          height: 10px;
+          .burger-lines {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            .burger-line {
+              height: 2px;
+              width: 100%;
+              background: #FFFFFF;
+              border-radius: 2px;
+              border: none;
+              outline: none;
+            }
+          }
+        }
+      }
+      .copyright {
+        display: none;
+      }
     }
   }
   .watch-you {
