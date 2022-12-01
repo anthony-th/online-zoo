@@ -111,6 +111,21 @@ html {
   display: none;
 }
 
+.shadow {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.display-block {
+  display: block;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -790,6 +805,7 @@ input[type=number] {
     background-color: #FFFFFF;
     width: 100%;
     transform: translateY(-100%);
+    z-index: 5;
   }
   .header .header__container .header__left .nav .logo-burger {
     width: 65.6px;
