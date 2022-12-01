@@ -2,22 +2,17 @@
 
 const burgerMenu = document.querySelector('.burger-menu');
 const burgerLines = document.querySelectorAll('.burger-line');
+const nav = document.querySelector('.nav');
+const activeColorMenu = document.querySelectorAll('.active');
 
 burgerMenu.addEventListener('click', () => {
-  // if (burgerMenu) {
-
-  // }
+  nav.classList.toggle('burger-open');
+  burgerMenu.classList.toggle('burger-open-now');
+  activeColorMenu.forEach(e => {
+    e.classList.toggle('active');
+    e.classList.toggle('orange');
+  })
   burgerLines.forEach((element) => {
-    console.log(element);
-    // if (arr[1].style.display == 'none ') {
-    //   console.log('hey');
-    // }
-    // arr[0].style.transform = 'rotate(45deg)';
-    // arr[0].style.position = 'relative';
-    // arr[0].style.top = '4px';
-    // arr[1].style.display = 'none';
-    // arr[2].style.transform = 'rotate(-45deg)';
-    // arr[2].style.position = 'relative';
-    // arr[2].style.bottom = '4px';
+    element.classList.toggle('burger-color');
   })
 })

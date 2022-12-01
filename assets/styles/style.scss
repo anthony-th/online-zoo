@@ -62,6 +62,10 @@ html {
   }
 }
 
+.logo-burger {
+  display: none;
+}
+
 .container {
   max-width: 1160px;
   display: flex;
@@ -81,6 +85,11 @@ html {
   gap: 58px;
   list-style-type: none;
   align-items: center;
+  .list__item {
+    &:last-child {
+      display: none;
+    }
+  }
 }
 
 .cursor-pointer {
