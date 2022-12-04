@@ -85,10 +85,10 @@
             order: 5;
           }
         }
-        .pick-and-feed__arrows {
-          gap: 172px;
-          top: calc(50% - 28px);
-        }
+      }
+      .pick-and-feed__arrows {
+        gap: 172px;
+        top: calc(354px + 92px/2 - 28px);
       }
     }
   }

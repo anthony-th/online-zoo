@@ -279,10 +279,10 @@
             }
           }
         }
-        .pick-and-feed__arrows {
-          top: calc($card-height-640 + 92px/2 - 32px);
-          gap: 30px;
-        }
+      }
+      .pick-and-feed__arrows {
+        top: calc($card-height-640 + 92px/2 - 33px);
+        gap: 30px;
       }
     }
   }

@@ -288,6 +288,7 @@ html {
   flex-direction: column;
   align-items: center;
   gap: 80px;
+  position: relative;
 }
 .pets .pets__container .cards {
   display: flex;
@@ -390,11 +391,11 @@ html {
 .pets .pets__container .cards .card:nth-child(7) {
   display: none;
 }
-.pets .pets__container .cards .pick-and-feed__arrows {
+.pets .pets__container .pick-and-feed__arrows {
   display: flex;
   gap: 1198px;
   position: absolute;
-  top: calc(50% - 32px);
+  top: 404px;
 }
 .pets .pets__background {
   position: absolute;
@@ -987,9 +988,9 @@ html {
     display: flex;
     order: 5;
   }
-  .pets .pets__container .cards .pick-and-feed__arrows {
+  .pets .pets__container .pick-and-feed__arrows {
     gap: 172px;
-    top: calc(50% - 28px);
+    top: 372px;
   }
   .pick-and-feed {
     padding: 30px 30px 50px;
@@ -1390,8 +1391,8 @@ html {
   .pets .pets__container .cards .card:nth-child(6) .card__icons .icon:last-child, .pets .pets__container .cards .card:nth-child(7) .card__icons .icon:last-child, .pets .pets__container .cards .card:nth-child(5) .card__icons .icon:last-child, .pets .pets__container .cards .card:nth-child(2) .card__icons .icon:last-child {
     height: 17.87px;
   }
-  .pets .pets__container .cards .pick-and-feed__arrows {
-    top: 346px;
+  .pets .pets__container .pick-and-feed__arrows {
+    top: 345px;
     gap: 30px;
   }
 }
@@ -1667,7 +1668,7 @@ html {
   .pets .pets__container .cards {
     gap: 20px;
   }
-  .pets .pets__container .cards .pick-and-feed__arrows {
+  .pets .pets__container .pick-and-feed__arrows {
     display: none;
   }
 }
