@@ -599,6 +599,13 @@ input[type=number] {
       .link {
         font-weight: 400;
       }
+      .list {
+        .list__item {
+          &:last-child {
+            display: block;
+          }
+        }
+      }
     }
     .footer__right {
       display: flex;

@@ -840,6 +840,9 @@ html {
 .footer .footer__container .footer__center .link {
   font-weight: 400;
 }
+.footer .footer__container .footer__center .list .list__item:last-child {
+  display: block;
+}
 .footer .footer__container .footer__right {
   display: flex;
   justify-content: space-between;
