@@ -290,15 +290,29 @@ html {
   gap: 80px;
   position: relative;
 }
-.pets .pets__container .cards {
+.pets .pets__container .cards-main-block {
+  max-width: 1160px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.pets .pets__container .cards-main-block .cards {
+  min-width: fit-content;
   display: flex;
   flex-wrap: wrap;
   gap: 20px 30px;
   justify-content: center;
   position: relative;
   padding-top: 2px;
+  order: 2;
 }
-.pets .pets__container .cards .card {
+.pets .pets__container .cards-main-block .cards:first-child {
+  order: 1;
+}
+.pets .pets__container .cards-main-block .cards:last-child {
+  order: 3;
+}
+.pets .pets__container .cards-main-block .cards .card {
   width: 366px;
   height: 426px;
   background: rgba(0, 0, 0, 0.75);
@@ -309,13 +323,13 @@ html {
   overflow: hidden;
   position: relative;
 }
-.pets .pets__container .cards .card .card__img {
+.pets .pets__container .cards-main-block .cards .card .card__img {
   width: 100%;
   height: auto;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.pets .pets__container .cards .card .card__block {
+.pets .pets__container .cards-main-block .cards .card .card__block {
   background: #ffffff;
   width: 100%;
   padding: 8px 8px 14px 15px;
@@ -325,27 +339,27 @@ html {
   display: flex;
   position: relative;
 }
-.pets .pets__container .cards .card .card__block .card__icons {
+.pets .pets__container .cards-main-block .cards .card .card__block .card__icons {
   width: 48px;
   height: 38px;
   position: relative;
 }
-.pets .pets__container .cards .card .card__block .card__icons .icon {
+.pets .pets__container .cards-main-block .cards .card .card__block .card__icons .icon {
   position: absolute;
 }
-.pets .pets__container .cards .card .card__block .card__text {
+.pets .pets__container .cards-main-block .cards .card .card__block .card__text {
   width: 294px;
   height: 39px;
   display: flex;
   flex-direction: column;
 }
-.pets .pets__container .cards .card:hover .card__img {
+.pets .pets__container .cards-main-block .cards .card:hover .card__img {
   animation: 1.2s 1 alternate slidein forwards;
   position: relative;
   opacity: 0.75;
   filter: blur(1px);
 }
-.pets .pets__container .cards .card:hover .card__block {
+.pets .pets__container .cards-main-block .cards .card:hover .card__block {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -353,42 +367,42 @@ html {
   background: rgba(0, 0, 0, 0.5);
   transition-duration: 0.7s;
 }
-.pets .pets__container .cards .card:hover .btn,
-.pets .pets__container .cards .card:hover .smallParagraph {
+.pets .pets__container .cards-main-block .cards .card:hover .btn,
+.pets .pets__container .cards-main-block .cards .card:hover .smallParagraph {
   font-size: 22px;
   letter-spacing: -0.005em;
 }
-.pets .pets__container .cards .card:hover .card__icons img {
+.pets .pets__container .cards-main-block .cards .card:hover .card__icons img {
   display: none;
 }
-.pets .pets__container .cards .card:hover .card__text {
+.pets .pets__container .cards-main-block .cards .card:hover .card__text {
   position: absolute;
   bottom: 74px;
   right: 35px;
   align-items: end;
 }
-.pets .pets__container .cards .card:hover .card__text p {
+.pets .pets__container .cards-main-block .cards .card:hover .card__text p {
   color: #ffffff;
   transition: all ease-in-out 1s;
 }
-.pets .pets__container .cards .card:first-child .card__icons .icon:first-child, .pets .pets__container .cards .card:nth-child(3) .card__icons .icon:first-child, .pets .pets__container .cards .card:nth-child(4) .card__icons .icon:first-child {
+.pets .pets__container .cards-main-block .cards .card:first-child .card__icons .icon:first-child, .pets .pets__container .cards-main-block .cards .card:nth-child(3) .card__icons .icon:first-child, .pets .pets__container .cards-main-block .cards .card:nth-child(4) .card__icons .icon:first-child {
   bottom: 1px;
   right: 9.71px;
 }
-.pets .pets__container .cards .card:first-child .card__icons .icon:last-child, .pets .pets__container .cards .card:nth-child(3) .card__icons .icon:last-child, .pets .pets__container .cards .card:nth-child(4) .card__icons .icon:last-child {
+.pets .pets__container .cards-main-block .cards .card:first-child .card__icons .icon:last-child, .pets .pets__container .cards-main-block .cards .card:nth-child(3) .card__icons .icon:last-child, .pets .pets__container .cards-main-block .cards .card:nth-child(4) .card__icons .icon:last-child {
   bottom: 1.75px;
   right: 4px;
   fill: #468E0D;
 }
-.pets .pets__container .cards .card:nth-child(6) .card__icons .icon:first-child, .pets .pets__container .cards .card:nth-child(7) .card__icons .icon:first-child, .pets .pets__container .cards .card:nth-child(5) .card__icons .icon:first-child, .pets .pets__container .cards .card:nth-child(2) .card__icons .icon:first-child {
+.pets .pets__container .cards-main-block .cards .card:nth-child(6) .card__icons .icon:first-child, .pets .pets__container .cards-main-block .cards .card:nth-child(7) .card__icons .icon:first-child, .pets .pets__container .cards-main-block .cards .card:nth-child(5) .card__icons .icon:first-child, .pets .pets__container .cards-main-block .cards .card:nth-child(2) .card__icons .icon:first-child {
   right: 13.74px;
   bottom: 5.5px;
 }
-.pets .pets__container .cards .card:nth-child(6) .card__icons .icon:last-child, .pets .pets__container .cards .card:nth-child(7) .card__icons .icon:last-child, .pets .pets__container .cards .card:nth-child(5) .card__icons .icon:last-child, .pets .pets__container .cards .card:nth-child(2) .card__icons .icon:last-child {
+.pets .pets__container .cards-main-block .cards .card:nth-child(6) .card__icons .icon:last-child, .pets .pets__container .cards-main-block .cards .card:nth-child(7) .card__icons .icon:last-child, .pets .pets__container .cards-main-block .cards .card:nth-child(5) .card__icons .icon:last-child, .pets .pets__container .cards-main-block .cards .card:nth-child(2) .card__icons .icon:last-child {
   right: 0;
   bottom: 2px;
 }
-.pets .pets__container .cards .card:nth-child(7) {
+.pets .pets__container .cards-main-block .cards .card:nth-child(7) {
   display: none;
 }
 .pets .pets__container .pick-and-feed__arrows {
@@ -958,33 +972,36 @@ html {
     background: url(../../assets/images/palm_foto.png) bottom 0px left -185px/384px 202px no-repeat, url(../../assets/images/strelitzia.png) bottom 0 right 0/241px 180px no-repeat;
     padding: 0 0 142px;
   }
-  .pets .pets__container .cards {
+  .pets .pets__container .cards-main-block {
+    max-width: 940px;
+  }
+  .pets .pets__container .cards-main-block .cards {
     gap: 92px 29px;
   }
-  .pets .pets__container .cards .card {
+  .pets .pets__container .cards-main-block .cards .card {
     width: 294px;
     height: 354px;
   }
-  .pets .pets__container .cards .card .card__block {
+  .pets .pets__container .cards-main-block .cards .card .card__block {
     padding: 9px 8px 14px 15px;
   }
-  .pets .pets__container .cards .card .card__block .card__text {
+  .pets .pets__container .cards-main-block .cards .card .card__block .card__text {
     max-width: 231px;
     gap: 2px;
   }
-  .pets .pets__container .cards .card:nth-child(3) {
+  .pets .pets__container .cards-main-block .cards .card:nth-child(3) {
     order: 4;
   }
-  .pets .pets__container .cards .card:nth-child(4) {
+  .pets .pets__container .cards-main-block .cards .card:nth-child(4) {
     display: none;
   }
-  .pets .pets__container .cards .card:nth-child(5) {
+  .pets .pets__container .cards-main-block .cards .card:nth-child(5) {
     order: 3;
   }
-  .pets .pets__container .cards .card:nth-child(6) {
+  .pets .pets__container .cards-main-block .cards .card:nth-child(6) {
     order: 6;
   }
-  .pets .pets__container .cards .card:nth-child(7) {
+  .pets .pets__container .cards-main-block .cards .card:nth-child(7) {
     display: flex;
     order: 5;
   }
@@ -1340,55 +1357,58 @@ html {
   .pets .pets__container {
     gap: 60px;
   }
-  .pets .pets__container .cards .card {
+  .pets .pets__container .cards-main-block {
+    max-width: 640px;
+  }
+  .pets .pets__container .cards-main-block .cards .card {
     width: 285px;
     height: 332px;
   }
-  .pets .pets__container .cards .card .card__block {
+  .pets .pets__container .cards-main-block .cards .card .card__block {
     padding: 6.24px 6px 10.91px 12.47px;
   }
-  .pets .pets__container .cards .card .card__block .card__text .btn {
+  .pets .pets__container .cards-main-block .cards .card .card__block .card__text .btn {
     font-size: 12.4695px;
   }
-  .pets .pets__container .cards .card .card__block .card__text .smallParagraph {
+  .pets .pets__container .cards-main-block .cards .card .card__block .card__text .smallParagraph {
     font-size: 11.6901px;
   }
-  .pets .pets__container .cards .card .card__block .card__icons {
+  .pets .pets__container .cards-main-block .cards .card .card__block .card__icons {
     width: 37.41px;
     height: 29.62px;
   }
-  .pets .pets__container .cards .card .card__block .card__icons .icon {
+  .pets .pets__container .cards-main-block .cards .card .card__block .card__icons .icon {
     height: 17.55px;
     width: 23.16px;
   }
-  .pets .pets__container .cards .card .card__block .card__icons .icon:last-child {
+  .pets .pets__container .cards-main-block .cards .card .card__block .card__icons .icon:last-child {
     height: 10.87px;
     width: 27.39px;
   }
-  .pets .pets__container .cards .card:nth-child(3) {
+  .pets .pets__container .cards-main-block .cards .card:nth-child(3) {
     order: 3;
   }
-  .pets .pets__container .cards .card:nth-child(5) {
+  .pets .pets__container .cards-main-block .cards .card:nth-child(5) {
     display: none;
   }
-  .pets .pets__container .cards .card:nth-child(6) {
+  .pets .pets__container .cards-main-block .cards .card:nth-child(6) {
     display: none;
   }
-  .pets .pets__container .cards .card:nth-child(1) .card__block .card__icons .icon:first-child, .pets .pets__container .cards .card:nth-child(3) .card__block .card__icons .icon:first-child, .pets .pets__container .cards .card:nth-child(4) .card__block .card__icons .icon:first-child {
+  .pets .pets__container .cards-main-block .cards .card:nth-child(1) .card__block .card__icons .icon:first-child, .pets .pets__container .cards-main-block .cards .card:nth-child(3) .card__block .card__icons .icon:first-child, .pets .pets__container .cards-main-block .cards .card:nth-child(4) .card__block .card__icons .icon:first-child {
     height: 26.16px;
     right: 4.71px;
   }
-  .pets .pets__container .cards .card:nth-child(1) .card__block .card__icons .icon:last-child, .pets .pets__container .cards .card:nth-child(3) .card__block .card__icons .icon:last-child, .pets .pets__container .cards .card:nth-child(4) .card__block .card__icons .icon:last-child {
+  .pets .pets__container .cards-main-block .cards .card:nth-child(1) .card__block .card__icons .icon:last-child, .pets .pets__container .cards-main-block .cards .card:nth-child(3) .card__block .card__icons .icon:last-child, .pets .pets__container .cards-main-block .cards .card:nth-child(4) .card__block .card__icons .icon:last-child {
     right: 0.71px;
     height: 27.55px;
     width: 33.16px;
   }
-  .pets .pets__container .cards .card:nth-child(6) .card__icons .icon:first-child, .pets .pets__container .cards .card:nth-child(7) .card__icons .icon:first-child, .pets .pets__container .cards .card:nth-child(5) .card__icons .icon:first-child, .pets .pets__container .cards .card:nth-child(2) .card__icons .icon:first-child {
+  .pets .pets__container .cards-main-block .cards .card:nth-child(6) .card__icons .icon:first-child, .pets .pets__container .cards-main-block .cards .card:nth-child(7) .card__icons .icon:first-child, .pets .pets__container .cards-main-block .cards .card:nth-child(5) .card__icons .icon:first-child, .pets .pets__container .cards-main-block .cards .card:nth-child(2) .card__icons .icon:first-child {
     right: 7.74px;
     height: 20.55px;
     width: 27.16px;
   }
-  .pets .pets__container .cards .card:nth-child(6) .card__icons .icon:last-child, .pets .pets__container .cards .card:nth-child(7) .card__icons .icon:last-child, .pets .pets__container .cards .card:nth-child(5) .card__icons .icon:last-child, .pets .pets__container .cards .card:nth-child(2) .card__icons .icon:last-child {
+  .pets .pets__container .cards-main-block .cards .card:nth-child(6) .card__icons .icon:last-child, .pets .pets__container .cards-main-block .cards .card:nth-child(7) .card__icons .icon:last-child, .pets .pets__container .cards-main-block .cards .card:nth-child(5) .card__icons .icon:last-child, .pets .pets__container .cards-main-block .cards .card:nth-child(2) .card__icons .icon:last-child {
     height: 17.87px;
   }
   .pets .pets__container .pick-and-feed__arrows {
@@ -1665,7 +1685,12 @@ html {
   .pets .pets__container {
     gap: 20px;
   }
-  .pets .pets__container .cards {
+  .pets .pets__container .cards-main-block {
+    max-width: 320px;
+    gap: 20px;
+  }
+  .pets .pets__container .cards-main-block .cards {
+    min-width: auto;
     gap: 20px;
   }
   .pets .pets__container .pick-and-feed__arrows {

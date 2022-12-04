@@ -56,33 +56,36 @@
     background: url(../../assets/images/palm_foto.png) bottom 0px left -185px/384px 202px no-repeat, url(../../assets/images/strelitzia.png) bottom 0 right 0/241px 180px no-repeat;
     padding: 0 0 142px;
     .pets__container {
-      .cards {
-        gap: 92px 29px;
-        .card {
-          width: 294px;
-          height: 354px;
-          .card__block {
-            padding: 9px 8px 14px 15px;
-            .card__text {
-              max-width: 231px;
-              gap: 2px;
+      .cards-main-block {
+        max-width: 940px;
+        .cards {
+          gap: 92px 29px;
+          .card {
+            width: 294px;
+            height: 354px;
+            .card__block {
+              padding: 9px 8px 14px 15px;
+              .card__text {
+                max-width: 231px;
+                gap: 2px;
+              }
             }
-          }
-          &:nth-child(3) {
-            order: 4;
-          }
-          &:nth-child(4) {
-            display: none;
-          }
-          &:nth-child(5) {
-            order: 3;
-          }
-          &:nth-child(6) {
-            order: 6;
-          }
-          &:nth-child(7) {
-            display: flex;
-            order: 5;
+            &:nth-child(3) {
+              order: 4;
+            }
+            &:nth-child(4) {
+              display: none;
+            }
+            &:nth-child(5) {
+              order: 3;
+            }
+            &:nth-child(6) {
+              order: 6;
+            }
+            &:nth-child(7) {
+              display: flex;
+              order: 5;
+            }
           }
         }
       }
