@@ -304,10 +304,12 @@ html {
   justify-content: center;
   position: relative;
   padding-top: 2px;
-  order: 2;
+}
+.pets .pets__container .cards-main-block .cards:nth-child(2) {
+  order: 1;
 }
 .pets .pets__container .cards-main-block .cards:first-child {
-  order: 1;
+  order: 2;
 }
 .pets .pets__container .cards-main-block .cards:last-child {
   order: 3;
@@ -922,6 +924,30 @@ html {
   color: #4B9200;
 }
 
+.animationLeft {
+  animation: moveLeft 1.2s;
+}
+
+.animationRight {
+  animation: moveRight 1.2s;
+}
+
+@keyframes moveLeft {
+  from {
+    right: 0;
+  }
+  to {
+    right: -940px;
+  }
+}
+@keyframes moveRight {
+  from {
+    right: 0;
+  }
+  to {
+    right: 940px;
+  }
+}
 @media screen and (max-width: 1599px) {
   .header {
     z-index: 99;
@@ -1137,6 +1163,30 @@ html {
     position: relative;
     right: 2px;
     bottom: -1px;
+  }
+}
+.animationLeft1000 {
+  animation: moveLeft1000 1.2s;
+}
+
+.animationRight1000 {
+  animation: moveRight1000 1.2s;
+}
+
+@keyframes moveLeft1000 {
+  from {
+    right: 0;
+  }
+  to {
+    right: -640px;
+  }
+}
+@keyframes moveRight1000 {
+  from {
+    right: 0;
+  }
+  to {
+    right: 640px;
   }
 }
 @media screen and (max-width: 999px) {

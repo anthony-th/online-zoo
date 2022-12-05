@@ -243,3 +243,28 @@
     }
   }
 }
+
+.animationLeft1000 {
+  animation: moveLeft1000 1.2s;
+}
+.animationRight1000 {
+  animation: moveRight1000 1.2s;
+}
+
+@keyframes moveLeft1000 {
+  from {
+    right: 0;
+  }
+  to {
+    right: -640px;
+  }
+}
+
+@keyframes moveRight1000 {
+  from {
+    right: 0;
+  }
+  to {
+    right: 640px;
+  }
+}

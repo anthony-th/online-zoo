@@ -281,9 +281,11 @@ html {
         justify-content: center;
         position: relative;
         padding-top: 2px;
-        order: 2;
-        &:first-child {
+        &:nth-child(2) {
           order: 1;
+        }
+        &:first-child {
+          order: 2;
         }
         &:last-child {
           order: 3;
@@ -944,6 +946,31 @@ html {
         }
       }
     }
+  }
+}
+
+.animationLeft {
+  animation: moveLeft 1.2s;
+}
+.animationRight {
+  animation: moveRight 1.2s;
+}
+
+@keyframes moveLeft {
+  from {
+    right: 0;
+  }
+  to {
+    right: -940px;
+  }
+}
+
+@keyframes moveRight {
+  from {
+    right: 0;
+  }
+  to {
+    right: 940px;
   }
 }
 
