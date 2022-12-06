@@ -31,71 +31,180 @@ function openBurger() {
 PREV_ARROW.addEventListener('click', prevClick);
 NEXT_ARROW.addEventListener('click', nextClick);
 
-cards[0].style.order = 1;
-cards[1].style.order = 2;
-cards[2].style.order = 3;
-
-// O___________O
-const CARD_1 = document.getElementById('card1')
-const CARD_2 = document.getElementById('card2')
-const CARD_3 = document.getElementById('card3')
-const CARD_4 = document.getElementById('card4')
-const CARD_5 = document.getElementById('card5')
-const CARD_6 = document.getElementById('card6')
-const CARD_7 = document.getElementById('card7')
-const CARD_8 = document.getElementById('card8')
-const CARD_9 = document.getElementById('card9')
-const CARD_10 = document.getElementById('card10')
-const CARD_11 = document.getElementById('card11')
-const CARD_12 = document.getElementById('card12')
-const CARD_13 = document.getElementById('card13')
-const CARD_14 = document.getElementById('card14')
-const CARD_15 = document.getElementById('card15')
-const CARD_16 = document.getElementById('card16')
-const CARD_17 = document.getElementById('card17')
-const CARD_18 = document.getElementById('card18')
-const CARD_19 = document.getElementById('card19')
-const CARD_20 = document.getElementById('card20')
-const CARD_21 = document.getElementById('card21')
-
-let cardsWithoutDisplayNone = [CARD_1, CARD_2, CARD_3, CARD_5, CARD_6, CARD_7, CARD_8, CARD_9, CARD_10,  CARD_12, CARD_13, CARD_14, CARD_15, CARD_16, CARD_17, CARD_19, CARD_20, CARD_21];
-let cardsWithoutDisplayNone640 = [CARD_1, CARD_2, CARD_3, CARD_7, CARD_8, CARD_9, CARD_10, CARD_14, CARD_15, CARD_16, CARD_17, CARD_21];
-
-function prevClick() {
-  if (window.innerWidth > 999) {
-    cardsWithoutDisplayNone.forEach(e => {
-      e.style.order = Math.floor(Math.random() * (cardsWithoutDisplayNone.length));
-    })
-    setTimeout(() => {
-      cardLeft.classList.add('animationLeft');
-      cardCenter.classList.add('animationLeft');
-      PREV_ARROW.removeEventListener('click', prevClick);
-      NEXT_ARROW.removeEventListener('click', nextClick);
-    }, 500);
-  } else {
-    cardsWithoutDisplayNone640.forEach(e => {
-      e.style.order = Math.floor(Math.random() * (cardsWithoutDisplayNone640.length));
-    })
-    setTimeout(() => {
-      cardLeft.classList.add('animationLeft1000');
-      cardCenter.classList.add('animationLeft1000');
-      PREV_ARROW.removeEventListener('click', prevClick);
-      NEXT_ARROW.removeEventListener('click', nextClick);
-    }, 500);
+const petCards = [
+  {
+    "id": "01",
+    "imageLink": "../../assets/images/red_panda.jpg",
+    "title": "Red panda",
+    "home": "Native to Southwest China",
+    "iconLink": "../../assets/svg/banana-bamboo_icon.svg",
+  },
+  {
+    "id": "02",
+    "imageLink": "../../assets/images/manul.jpg",
+    "title": "Pallas's cat",
+    "home": "Native to Lake Baikal",
+    "iconLink": "../../assets/svg/meet-fish_icon.svg",
+  },
+  {
+    "id": "03",
+    "imageLink": "../../assets/images/beaver.jpg",
+    "title": "Beaver",
+    "home": "Native to temp. N.Hemisphere",
+    "iconLink": "../../assets/svg/banana-bamboo_icon.svg",
+  },
+  {
+    "id": "04",
+    "imageLink": "../../assets/images/rabbit.jpg",
+    "title": "Rabbit",
+    "home": "Native to southwestern Europe",
+    "iconLink": "../../assets/svg/banana-bamboo_icon.svg",
+  },
+  {
+    "id": "05",
+    "imageLink": "../../assets/images/sand_cat.jpg",
+    "title": "Sand cat",
+    "home": "Native to Africa",
+    "iconLink": "../../assets/svg/meet-fish_icon.svg",
+  },
+  {
+    "id": "06",
+    "imageLink": "../../assets/images/prionailurus_bengalensis_euptilurus.jpg",
+    "title": "Leopard cat",
+    "home": "Native to Asia",
+    "iconLink": "../../assets/svg/meet-fish_icon.svg",
+  },
+  {
+    "id": "07",
+    "imageLink": "../../assets/images/lynx_canadensis.jpg",
+    "title": "Canada lynx",
+    "home": "Native to Canada",
+    "iconLink": "../../assets/svg/meet-fish_icon.svg",
+  },
+  {
+    "id": "08",
+    "imageLink": "../../assets/images/pandas.jpg",
+    "title": "Giant Pandas",
+    "home": "Native to Southwest China",
+    "iconLink": "../../assets/svg/banana-bamboo_icon.svg",
+  },
+  {
+    "id": "09",
+    "imageLink": "../../assets/images/eagls.jpg",
+    "title": "Eagles",
+    "home": "Native to South America",
+    "iconLink": "../../assets/svg/meet-fish_icon.svg",
+  },
+  {
+    "id": "10",
+    "imageLink": "../../assets/images/gorillas.jpg",
+    "title": "Gorillas",
+    "home": "Native to Congo",
+    "iconLink": "../../assets/svg/banana-bamboo_icon.svg",
+  },
+  {
+    "id": "11",
+    "imageLink": "../../assets/images/twotoed.jpg",
+    "title": "Two-toed Sloth",
+    "home": "Mesoamerica, South America",
+    "iconLink": "../../assets/svg/banana-bamboo_icon.svg",
+  },
+  {
+    "id": "12",
+    "imageLink": "../../assets/images/cheetas.jpg",
+    "title": "Cheetahs",
+    "home": "Native to Africa",
+    "iconLink": "../../assets/svg/meet-fish_icon.svg",
+  },
+  {
+    "id": "13",
+    "imageLink": "../../assets/images/peng.jpg",
+    "title": "Penguins",
+    "home": "Native to Antarctica",
+    "iconLink": "../../assets/svg/meet-fish_icon.svg",
+  },
+  {
+    "id": "14",
+    "imageLink": "../../assets/images/alligator.jpg",
+    "title": "Alligators",
+    "home": "Native to Southeastern U.S.",
+    "iconLink": "../../assets/svg/meet-fish_icon.svg",
+  },
+  {
+    "id": "15",
+    "imageLink": "../../assets/images/bison.jpg",
+    "title": "Bison",
+    "home": "Native to North America",
+    "iconLink": "../../assets/svg/banana-bamboo_icon.svg",
+  },
+  {
+    "id": "16",
+    "imageLink": "../../assets/images/grizzly.jpg",
+    "title": "Grizzly bear",
+    "home": "Native to North America",
+    "iconLink": "../../assets/svg/meet-fish_icon.svg",
+  },
+  {
+    "id": "17",
+    "imageLink": "../../assets/images/hydrochaeris.jpg",
+    "title": "Capybara",
+    "home": "Native to South America",
+    "iconLink": "../../assets/svg/banana-bamboo_icon.svg",
+  },
+  {
+    "id": "18",
+    "imageLink": "../../assets/images/camel.jpg",
+    "title": "Bactrian camel",
+    "home": "Native to Asia",
+    "iconLink": "../../assets/svg/banana-bamboo_icon.svg",
+  },
+  {
+    "id": "19",
+    "imageLink": "../../assets/images/arctic_fox.jpg",
+    "title": "Arctic fox",
+    "home": "Native to Arctic",
+    "iconLink": "../../assets/svg/meet-fish_icon.svg",
+  },
+  {
+    "id": "20",
+    "imageLink": "../../assets/images/eurasian_hobby.jpg",
+    "title": "Eurasian hobby",
+    "home": "Native to South Africa",
+    "iconLink": "../../assets/svg/meet-fish_icon.svg",
+  },
+  {
+    "id": "21",
+    "imageLink": "../../assets/images/bat-eared-fox.jpg",
+    "title": "Bat-eared fox",
+    "home": "Native to African savanna",
+    "iconLink": "../../assets/svg/meet-fish_icon.svg",
   }
-  console.log('prev');
-}
+]
+
+let counter = 6;
+cards[0].style.order = '1';
+cards[1].style.order = '2';
+cards[2].style.order = '3';
 
 cardLeft.addEventListener('animationend', animationEnd);
 function animationEnd() {
-  if (window.innerWidth > 999) {
+  if (window.innerWidth > 1599) {
     cardCenter.innerHTML = cardLeft.innerHTML;
+    cardLeft.innerHTML = createCards().innerHTML;
+    cardLeft.classList.remove('animationLeft1600');
+    cardCenter.classList.remove('animationLeft1600');
+    PREV_ARROW.addEventListener('click', prevClick);
+    NEXT_ARROW.addEventListener('click', nextClick);
+  } else if (window.innerWidth > 999) {
+    cardCenter.innerHTML = cardLeft.innerHTML;
+    cardLeft.innerHTML = createCards().innerHTML;
     cardLeft.classList.remove('animationLeft');
     cardCenter.classList.remove('animationLeft');
     PREV_ARROW.addEventListener('click', prevClick);
     NEXT_ARROW.addEventListener('click', nextClick);
   } else {
     cardCenter.innerHTML = cardLeft.innerHTML;
+    cardLeft.innerHTML = createCards().innerHTML;
     cardLeft.classList.remove('animationLeft1000');
     cardCenter.classList.remove('animationLeft1000');
     PREV_ARROW.addEventListener('click', prevClick);
@@ -104,42 +213,124 @@ function animationEnd() {
 }
 cardRight.addEventListener('animationend', animationEndRight);
 function animationEndRight() {
-  if (window.innerWidth > 999) {
+  if (window.innerWidth > 1599) {
+    cardRight.classList.remove('animationRight1600');
+    cardCenter.classList.remove('animationRight1600');
+    NEXT_ARROW.addEventListener('click', nextClick);
+    PREV_ARROW.addEventListener('click', prevClick);
     cardCenter.innerHTML = cardRight.innerHTML;
+    cardRight.innerHTML = createCards().innerHTML;
+  } else if (window.innerWidth > 999) {
     cardRight.classList.remove('animationRight');
     cardCenter.classList.remove('animationRight');
     NEXT_ARROW.addEventListener('click', nextClick);
     PREV_ARROW.addEventListener('click', prevClick);
-  } else {
     cardCenter.innerHTML = cardRight.innerHTML;
+    cardRight.innerHTML = createCards().innerHTML;
+  } else {
     cardRight.classList.remove('animationRight1000');
     cardCenter.classList.remove('animationRight1000');
     NEXT_ARROW.addEventListener('click', nextClick);
     PREV_ARROW.addEventListener('click', prevClick);
+    cardCenter.innerHTML = cardRight.innerHTML;
+    cardRight.innerHTML = createCards().innerHTML;
   }
 }
 
 function nextClick() {
-  if (window.innerWidth > 999) {
+  if (window.innerWidth > 1599) {
     setTimeout(() => {
       PREV_ARROW.removeEventListener('click', prevClick);
       NEXT_ARROW.removeEventListener('click', nextClick);
-      cardRight.classList.toggle('animationRight');
-      cardCenter.classList.toggle('animationRight');
+      cardRight.classList.add('animationRight1600');
+      cardCenter.classList.add('animationRight1600');
     }, 500);
-    cardsWithoutDisplayNone.forEach(e => {
-      e.style.order = Math.floor(Math.random() * (cardsWithoutDisplayNone.length));
-    })
+  } else if (window.innerWidth > 999) {
+    setTimeout(() => {
+      PREV_ARROW.removeEventListener('click', prevClick);
+      NEXT_ARROW.removeEventListener('click', nextClick);
+      cardRight.classList.add('animationRight');
+      cardCenter.classList.add('animationRight');
+    }, 500);
   } else {
     setTimeout(() => {
       PREV_ARROW.removeEventListener('click', prevClick);
       NEXT_ARROW.removeEventListener('click', nextClick);
-      cardRight.classList.toggle('animationRight1000');
-      cardCenter.classList.toggle('animationRight1000');
+      cardRight.classList.add('animationRight1000');
+      cardCenter.classList.add('animationRight1000');
     }, 500);
-    cardsWithoutDisplayNone640.forEach(e => {
-      e.style.order = Math.floor(Math.random() * (cardsWithoutDisplayNone640.length));
-    })
   }
-  console.log('nextArrow');
 }
+
+function prevClick() {
+  if (window.innerWidth > 1599) {
+    setTimeout(() => {
+      cardLeft.classList.add('animationLeft1600');
+      cardCenter.classList.add('animationLeft1600');
+      PREV_ARROW.removeEventListener('click', prevClick);
+      NEXT_ARROW.removeEventListener('click', nextClick);
+    }, 500);
+  } else if (window.innerWidth > 999) {
+    setTimeout(() => {
+      cardLeft.classList.add('animationLeft');
+      cardCenter.classList.add('animationLeft');
+      PREV_ARROW.removeEventListener('click', prevClick);
+      NEXT_ARROW.removeEventListener('click', nextClick);
+    }, 500);
+  } else {
+    setTimeout(() => {
+      cardLeft.classList.add('animationLeft1000');
+      cardCenter.classList.add('animationLeft1000');
+      PREV_ARROW.removeEventListener('click', prevClick);
+      NEXT_ARROW.removeEventListener('click', nextClick);
+    }, 500);
+  }
+}
+
+if (window.innerWidth < 1000) {
+  counter = 4;
+}
+
+window.addEventListener('resize', resize);
+
+cardCenter.innerHTML = createCards().innerHTML;
+cardLeft.innerHTML = createCards().innerHTML;
+cardRight.innerHTML = createCards().innerHTML;
+
+function resize() {
+  if (window.innerWidth < 1000) {
+    counter = 4;
+  } else {
+    counter = 6;
+  }
+}
+
+function createCards() {
+  let newArr = [];
+  let newCards = document.createElement("div");
+  for (let i = 0; i < counter; i++) {
+    let num = Math.floor(Math.random() * petCards.length);
+    if (!newArr.includes(petCards[num].title)) {
+      newArr.push(petCards[num].title);
+      let card = document.createElement("div");
+      card.classList = 'card noselect cursor-pointer';
+      card.innerHTML = `<img src="${petCards[num].imageLink}" alt="" class="card__img">
+                        <div class="card__block">
+                          <div class="card__text">
+                            <p class="btn">${petCards[num].title}</p>
+                            <p class="smallParagraph">${petCards[num].home}</p>
+                          </div>
+                          <div class="card__icons">
+                            <img class="icon" src="${petCards[num].iconLink}" alt="">
+                          </div>
+                        </div>`;
+      newCards.appendChild(card);
+    } else {
+      i--;
+    }
+  }
+  return newCards;
+}
+
+alert('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
+console.log('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');

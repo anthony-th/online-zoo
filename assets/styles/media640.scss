@@ -222,18 +222,18 @@
                   font-size: 11.6901px;
                 }
               }
-              .card__icons {
-                width: 37.41px;
-                height: 29.62px;
-                .icon {
-                  height: 17.55px;
-                  width: 23.16px;
-                  &:last-child {
-                    height: 10.87px;
-                    width: 27.39px;
-                  }
-                }
-              }
+              // .card__icons {
+              //   // width: 37.41px;
+              //   // height: 29.62px;
+              //   // .icon {
+              //   //   height: 17.55px;
+              //   //   width: 23.16px;
+              //   //   &:last-child {
+              //   //     height: 10.87px;
+              //   //     width: 27.39px;
+              //   //   }
+              //   // }
+              // }
             }
             &:nth-child(3) {
               order: 3;
@@ -244,42 +244,42 @@
             &:nth-child(6) {
               display: none;
             }
-            &:nth-child(1),
-            &:nth-child(3),
-            &:nth-child(4) {
-              .card__block {
-                .card__icons {
-                  .icon {
-                    &:first-child {
-                      height: 26.16px;
-                      right: 4.71px;
-                    }
-                    &:last-child {
-                      right: 0.71px;
-                      height: 27.55px;
-                      width: 33.16px;
-                    }
-                  }
-                }
-              }
-            }
-            &:nth-child(6),
-            &:nth-child(7),
-            &:nth-child(5),
-            &:nth-child(2) {
-              .card__icons {
-                .icon {
-                  &:first-child {
-                    right: 7.74px;
-                    height: 20.55px;
-                    width: 27.16px;
-                  }
-                  &:last-child {
-                    height: 17.87px;
-                  }
-                }
-              }
-            }
+            // &:nth-child(1),
+            // &:nth-child(3),
+            // &:nth-child(4) {
+            //   .card__block {
+            //     .card__icons {
+            //       .icon {
+            //         &:first-child {
+            //           height: 26.16px;
+            //           right: 4.71px;
+            //         }
+            //         &:last-child {
+            //           right: 0.71px;
+            //           height: 27.55px;
+            //           width: 33.16px;
+            //         }
+            //       }
+            //     }
+            //   }
+            // }
+            // &:nth-child(6),
+            // &:nth-child(7),
+            // &:nth-child(5),
+            // &:nth-child(2) {
+            //   .card__icons {
+            //     .icon {
+            //       &:first-child {
+            //         right: 7.74px;
+            //         height: 20.55px;
+            //         width: 27.16px;
+            //       }
+            //       &:last-child {
+            //         height: 17.87px;
+            //       }
+            //     }
+            //   }
+            // }
           }
         }
       }

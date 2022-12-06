@@ -73,9 +73,9 @@
             &:nth-child(3) {
               order: 4;
             }
-            &:nth-child(4) {
-              display: none;
-            }
+            // &:nth-child(4) {
+            //   display: none;
+            // }
             &:nth-child(5) {
               order: 3;
             }
@@ -266,5 +266,30 @@
   }
   to {
     right: 640px;
+  }
+}
+
+.animationLeft1600 {
+  animation: moveLeft1600 1.2s;
+}
+.animationRight1600 {
+  animation: moveRight1600 1.2s;
+}
+
+@keyframes moveLeft1600 {
+  from {
+    right: 0;
+  }
+  to {
+    right: -1160px;
+  }
+}
+
+@keyframes moveRight1600 {
+  from {
+    right: 0;
+  }
+  to {
+    right: 1160px;
   }
 }
