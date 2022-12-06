@@ -316,12 +316,7 @@ html {
             display: flex;
             position: relative;
             .card__icons {
-              // width: 48px;
-              // height: 38px;
               position: relative;
-              // .icon {
-              //   position: absolute;
-              // }
             }
             .card__text {
               width: 294px;
@@ -366,41 +361,6 @@ html {
               }
             }
           }
-          // &:first-child,
-          // &:nth-child(3),
-          // &:nth-child(4) {
-          //   .card__icons {
-          //     .icon:first-child {
-          //       bottom: 1px;
-          //       right: 9.71px;
-          //     }
-          //     .icon:last-child {
-          //       bottom: 1.75px;
-          //       right: 4px;
-          //       fill: #468E0D;
-          //     }
-          //   }
-          // }
-          // &:nth-child(6),
-          // &:nth-child(7),
-          // &:nth-child(5),
-          // &:nth-child(2) {
-          //   .card__icons {
-          //     .icon {
-          //       &:first-child {
-          //         right: 13.74px;
-          //         bottom: 5.5px;
-          //       }
-          //       &:last-child {
-          //         right: 0;
-          //         bottom: 2px;
-          //       }
-          //     }
-          //   }
-          // }
-          // &:nth-child(7) {
-          //   display: none;
-          // }
         }
       }
     }
@@ -601,9 +561,8 @@ html {
       display: flex;
       gap: 29px;
       margin-bottom: 22px;
-      justify-content: center;
+      max-width: 1160px;
       overflow: hidden;
-      flex-wrap: wrap;
       .testimonials__card {
         position: relative;
         width: 268px;
@@ -655,12 +614,6 @@ html {
         }
         &:nth-child(3) {
           padding-right: 14px;
-        }
-        &:nth-child(5),
-        &:nth-child(6),
-        &:nth-child(7),
-        &:nth-child(8) {
-          display: none;
         }
         &::before {
           content: "";
