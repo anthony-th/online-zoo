@@ -12,9 +12,24 @@ const BURGER_MENU = document.querySelector('.burger-menu');
 const SHADOW = document.querySelector('.shadow');
 const PREV_ARROW = document.getElementById('prev');
 const NEXT_ARROW = document.getElementById('next');
+const MODAL = document.querySelector('.modal');
 
-SHADOW.addEventListener('click', openBurger);
+SHADOW.addEventListener('click', closeShadow);
 BURGER_MENU.addEventListener('click', openBurger);
+
+function closeShadow() {
+  NAV.classList.remove('burger-open');
+  SHADOW.classList.remove('display-block');
+  BURGER_MENU.classList.remove('burger-open-now');
+  MODAL.style.display = 'none';
+  activeColorMenu.forEach(e => {
+    e.classList.remove('active');
+    e.classList.remove('orange');
+  })
+  burgerLines.forEach((element) => {
+    element.classList.remove('burger-color');
+  })
+}
 
 function openBurger() {
   NAV.classList.toggle('burger-open');
@@ -442,5 +457,25 @@ function changeValue() {
     })
   }
 }
-alert('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
-console.log('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
+
+let cancel = document.createElement('img');
+cancel.style.width = '24px';
+cancel.style.height = '24px';
+cancel.style.position = 'absolute';
+cancel.style.right = '10px';
+cancel.style.top = '10px';
+cancel.src = './assets/images/cancel.png';
+cancel.style.cursor = 'pointer';
+
+testimonialsCard.forEach(e => {
+  e.addEventListener('click', clickTesti);
+})
+
+function clickTesti() {
+  MODAL.innerHTML = this.innerHTML;
+  MODAL.style.display = 'flex';
+  SHADOW.classList.add('display-block');
+  MODAL.appendChild(cancel);
+}
+
+cancel.addEventListener('click', closeShadow);
