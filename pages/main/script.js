@@ -479,3 +479,6 @@ function clickTesti() {
 }
 
 cancel.addEventListener('click', closeShadow);
+
+alert('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
+console.log('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
