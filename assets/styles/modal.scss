@@ -1,0 +1,66 @@
+.modal {
+  position: absolute;
+  max-width: fit-content;
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 99;
+  min-width: 268px;
+  top: 60px;
+  left: calc(50% - 268px/2);
+  width: 268px;
+  height: 391px;
+  padding: 17px 12px 19px 17px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  .card__top {
+    height: 38px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: flex-start;
+    .user-icon {
+      width: 37px;
+      height: 37px;
+    }
+    .testimonials__card-title {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .user-title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #000000;
+      }
+      .user-subtitle {
+        display: flex;
+        gap: 5px;
+        .gray4 {
+          margin-right: 1px;
+        }
+      }
+    }
+  }
+  .testimals__text-block {
+    width: 237px;
+    height: 309px;
+    overflow: hidden;
+    .smallParagraph {
+      bottom: auto;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: add, add;
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+}

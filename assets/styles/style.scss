@@ -1,5 +1,6 @@
 @import './constants.scss';
 @import './fonts.scss';
+@import './modal.scss';
 
 * {
   margin: 0;
@@ -558,6 +559,7 @@ html {
       margin-bottom: 45px;
     }
     .testimonials__cards {
+      position: relative;
       display: flex;
       gap: 29px;
       margin-bottom: 22px;
