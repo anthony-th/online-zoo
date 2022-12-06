@@ -73,9 +73,6 @@
             &:nth-child(3) {
               order: 4;
             }
-            // &:nth-child(4) {
-            //   display: none;
-            // }
             &:nth-child(5) {
               order: 3;
             }
@@ -145,21 +142,18 @@
         }
       }
       .testimonials__cards {
+        max-width: 940px;
         gap: 30px;
         width: 100%;
         margin-bottom: 18px;
         .testimonials__card {
+          min-width: 293px;
           width: 293px;
           &:first-child {
             padding: 15px 18px 19px 16px;
             .testimals__text-block {
               width: 255px;
             }
-          }
-          &:nth-child(2),
-          &:nth-child(3),
-          &:nth-child(4) {
-            display: none;
           }
           &:nth-child(5) {
             display: flex;
