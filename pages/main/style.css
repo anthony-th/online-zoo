@@ -569,6 +569,7 @@ html {
   gap: 29px;
   margin-bottom: 22px;
   justify-content: center;
+  overflow: hidden;
   flex-wrap: wrap;
 }
 .testimonials .testimonials__container .testimonials__cards .testimonials__card {

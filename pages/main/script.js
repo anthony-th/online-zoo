@@ -181,6 +181,17 @@ const petCards = [
   }
 ]
 
+const testimonialsCards = [
+  {
+    "id": "01",
+    "avatar": "./assets/images/red_panda.jpg",
+    "name": "Red panda",
+    "location": "Native to Southwest China",
+    "day": "./assets/svg/banana-bamboo_icon.svg",
+    "text": "./assets/svg/banana-bamboo_icon.svg",
+  },
+]
+
 let counter = 6;
 cards[0].style.order = '1';
 cards[1].style.order = '2';
@@ -332,5 +343,5 @@ function createCards() {
   return newCards;
 }
 
-alert('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
-console.log('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
+// alert('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
+// console.log('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
