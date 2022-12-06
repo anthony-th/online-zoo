@@ -617,10 +617,10 @@ html {
 .testimonials .testimonials__container .testimonials__cards .testimonials__card .testimals__text-block .smallParagraph {
   bottom: auto;
 }
-.testimonials .testimonials__container .testimonials__cards .testimonials__card:first-child, .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(2) {
+.testimonials .testimonials__container .testimonials__cards .testimonials__card:first-child, .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(2), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(5), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(6), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(9), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(10) {
   padding-right: 15px;
 }
-.testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(3) {
+.testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(3), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(7), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(11) {
   padding-right: 14px;
 }
 .testimonials .testimonials__container .testimonials__cards .testimonials__card::before {
@@ -1050,6 +1050,7 @@ html {
     width: 75px;
   }
   .testimonials .testimonials__container .testimonials__cards {
+    max-width: 940px;
     gap: 30px;
     width: 100%;
     margin-bottom: 18px;

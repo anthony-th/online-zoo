@@ -3,6 +3,7 @@
 const burgerLines = document.querySelectorAll('.burger-line');
 const activeColorMenu = document.querySelectorAll('.active');
 const cards = document.querySelectorAll('.cards');
+const testimonialsCard = document.querySelectorAll('.testimonials__card');
 const cardLeft = document.getElementById('cards-left');
 const cardCenter = document.getElementById('cards-center');
 const cardRight = document.getElementById('cards-right');
@@ -300,6 +301,7 @@ cardRight.innerHTML = createCards().innerHTML;
 function resize() {
   if (window.innerWidth < 1000) {
     counter = 4;
+    changeValue();
   } else {
     counter = 6;
   }
@@ -340,5 +342,102 @@ inputRange.addEventListener('input', changeValue);
 
 function changeValue() {
   let newValue = inputRange.value;
-  console.log(newValue);
+  if (window.innerWidth >= 1600) {
+    if (newValue == 0) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(0)';
+      })
+    }
+    if (newValue == 1) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-297px)';
+      })
+    }
+    if (newValue == 2) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-594px)';
+      })
+    }
+    if (newValue == 3) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-891px)';
+      })
+    }
+    if (newValue == 4) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-1186px)';
+      })
+    }
+    if (newValue == 5) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-1483px)';
+      })
+    }
+    if (newValue == 6) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-1780px)';
+      })
+    }
+    if (newValue == 7) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-2077px)';
+      })
+    }
+    if (newValue == 8) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-2372px)';
+      })
+    }
+  }
+  if ((window.innerWidth < 1600) & (window.innerWidth > 999)) {
+    if (newValue == 0) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(0)';
+      })
+    }
+    if (newValue == 1) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-323px)';
+      })
+    }
+    if (newValue == 2) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-646px)';
+      })
+    }
+    if (newValue == 3) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-969px)';
+      })
+    }
+    if (newValue == 4) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-1292px)';
+      })
+    }
+    if (newValue == 5) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-1615px)';
+      })
+    }
+    if (newValue == 6) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-1938px)';
+      })
+    }
+    if (newValue == 7) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-2261px)';
+      })
+    }
+    if (newValue == 8) {
+      testimonialsCard.forEach(e => {
+        e.style.transform = 'translateX(-2630px)';
+      })
+    }
+  } else {
+    testimonialsCard.forEach(e => {
+      e.style.transform = 'translateX(0)';
+    })
+  }
 }
