@@ -299,6 +299,7 @@ cardLeft.innerHTML = createCards().innerHTML;
 cardRight.innerHTML = createCards().innerHTML;
 
 function resize() {
+  inputRange.value = 0;
   if (window.innerWidth < 1000) {
     counter = 4;
     changeValue();
@@ -435,9 +436,17 @@ function changeValue() {
         e.style.transform = 'translateX(-2630px)';
       })
     }
-  } else {
+  } else if (window.innerWidth <= 999) {
     testimonialsCard.forEach(e => {
       e.style.transform = 'translateX(0)';
     })
   }
 }
+// testimonialsCard.forEach(e => {
+//   if (window.innerWidth <= 640) {
+//   e.addEventListener('click', () => {
+//     e.style.cursor = 'pointer';
+//     console.log('hye');
+//   })
+//   }
+// })

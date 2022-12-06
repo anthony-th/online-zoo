@@ -1504,15 +1504,26 @@ html {
     gap: 9px;
     justify-content: center;
   }
+}
+@media screen and (max-width: 999px) and (max-width: 640px) {
+  .testimonials .testimonials__container .testimonials__cards .testimonials__card {
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 999px) {
   .testimonials .testimonials__container .testimonials__cards .testimonials__card .card__top {
     position: relative;
     left: -4px;
     top: -1px;
   }
+}
+@media screen and (max-width: 999px) {
   .testimonials .testimonials__container .testimonials__cards .testimonials__card .testimals__text-block {
     width: 566px;
     padding-left: 1px;
   }
+}
+@media screen and (max-width: 999px) {
   .testimonials .testimonials__container .testimonials__cards .testimonials__card:first-child {
     padding: 15px 18px 12px 16px;
   }
@@ -1520,6 +1531,8 @@ html {
     width: 566px;
     padding-left: 1px;
   }
+}
+@media screen and (max-width: 999px) {
   .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(6) {
     display: flex;
     padding: 10px 29px 12px 18px;
@@ -1537,12 +1550,18 @@ html {
     top: 0;
     gap: 5px;
   }
+}
+@media screen and (max-width: 999px) {
   .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(2), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(3), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(4), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(8), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(9), .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(10) {
     display: none;
   }
+}
+@media screen and (max-width: 999px) {
   .testimonials .testimonials__container .testimonials__cards .testimonials__card:last-child, .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(5) {
     display: none;
   }
+}
+@media screen and (max-width: 999px) {
   .testimonials .testimonials__container .testimonials__cards .testimonials__card:nth-child(7) {
     display: flex;
     padding: 15px 29px 8px 18px;
@@ -1556,9 +1575,13 @@ html {
     max-width: 566px;
     padding-left: 1px;
   }
+}
+@media screen and (max-width: 999px) {
   .testimonials .testimonials__container .progress-bar {
     display: none;
   }
+}
+@media screen and (max-width: 999px) {
   .testimonials .testimonials__container .btn2 {
     width: 240px;
     left: auto;

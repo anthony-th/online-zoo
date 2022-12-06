@@ -315,6 +315,9 @@
           height: 109px;
           gap: 9px;
           justify-content: center;
+          @media screen and (max-width: 640px) {
+            cursor: pointer;
+          }
           .card__top {
             position: relative;
             left: -4px;
