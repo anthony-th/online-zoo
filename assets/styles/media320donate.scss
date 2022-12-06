@@ -8,6 +8,9 @@
   .header {
     .header__container {
       padding: 2.29px 10px 2.68px;
+      .copyright {
+        display: none;
+      }
     }
   }
 

@@ -1,24 +1,23 @@
 'use strict';
 
-// const progressText = document.querySelectorAll('.progress-text__block');
-// const radioButton = document.querySelectorAll('.progress-bar__radio-button');
+const burgerMenu = document.querySelector('.burger-menu');
+const burgerLines = document.querySelectorAll('.burger-line');
+const nav = document.querySelector('.nav');
+const activeColorMenu = document.querySelectorAll('.active');
+const shadow = document.querySelector('.shadow');
 
-// function toggleInput() {
-//   // progressText.classList.toggle('or3');
-//   // radioButton.classList.toggle('or3');
-//   progressText.forEach((block, index) => {
-//     // block.classList.toggle('or3');
-//     if (block.classList.contains('or3')) {
-//       block.classList.remove('or3');
-//     } else {
-//       block.classList.add('or3');
-//     }
-//   })
-// }
+shadow.addEventListener('click', openBurger);
+burgerMenu.addEventListener('click', openBurger);
 
-// radioButton.addEventListener('click', toggleInput);
-
-// radioButton.forEach(index => {
-//   index.addEventListener('click', toggleInput);
-// })
-
+function openBurger() {
+  nav.classList.toggle('burger-open');
+  shadow.classList.toggle('display-block');
+  burgerMenu.classList.toggle('burger-open-now');
+  activeColorMenu.forEach(e => {
+    e.classList.toggle('active');
+    e.classList.toggle('orange');
+  })
+  burgerLines.forEach((element) => {
+    element.classList.toggle('burger-color');
+  })
+}

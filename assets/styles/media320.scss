@@ -90,11 +90,16 @@
     background: url(../../assets/images/palm_foto.png) bottom 0px left -73px/132px 71px no-repeat, url(../../assets/images/strelitzia.png) bottom -4px right -21px/92px 72px no-repeat;
     .pets__container {
       gap: 20px;
-      .cards {
+      .cards-main-block {
+        max-width: 320px;
         gap: 20px;
-        .pick-and-feed__arrows {
-          display: none;
+        .cards {
+          min-width: auto;
+          gap: 20px;
         }
+      }
+      .pick-and-feed__arrows {
+        display: none;
       }
     }
   }

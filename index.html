@@ -18,6 +18,10 @@
             <img src="./assets/svg/bamboo.svg" alt="" class="logo__img">
           </a>
           <nav class="nav">
+            <a href="./index.html" class="logo-burger cursor-pointer">
+              <h2 class="title">PetStory online</h2>
+              <img src="./assets/svg/bamboo.svg" alt="" class="logo__img">
+            </a>
             <ul class="list">
               <li class="list__item">
                 <a href="./index.html" class="link active orange cursor-pointer">About</a>
@@ -34,6 +38,9 @@
               <li class="list__item">
                 <a href="#contactus" class="link cursor-pointer">Contact us</a>
               </li>
+              <li class="list__item">
+                <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" target="_blank" class="link cursor-pointer">Designed by ©</a>
+              </li>
             </ul>
           </nav>
 					<ul class="burger-menu">
@@ -43,6 +50,7 @@
 							<hr class="burger-line" />
 						</li>
 					</ul>
+          <div class="shadow"></div>
         </div>
         <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" target="_blank" class="link copyright cursor-pointer">Designed by ©</a>
       </div>
@@ -69,105 +77,17 @@
       </section>
       <section class="section pets">
         <div class="container pets__container">
-          <div class="cards">
-            <div class="card noselect cursor-pointer">
-              <img src="./assets/images/pandas.jpg" alt="" class="card__img">
-              <div class="card__block">
-                <div class="card__text">
-                  <p class="btn">giant Pandas</p>
-                  <p class="smallParagraph">Native to Southwest China</p>
-                </div>
-                <div class="card__icons">
-                  <img class="icon" src="./assets/svg/bamboo_gr.svg" alt="">
-                  <img class="icon" src="./assets/svg/banana.svg" alt="">
-                </div>
-              </div>
+          <div class="cards-main-block">
+            <div class="cards" id="cards-left"></div>
+            <div class="cards" id="cards-center"></div>
+            <div class="cards" id="cards-right"></div>
+          </div>
+          <div class="pick-and-feed__arrows">
+            <div class="arrow orange cursor-pointer" id="prev">
+              <img class="arrow__img" src="./assets/svg/arrow.svg" alt="">
             </div>
-            <div class="card noselect cursor-pointer">
-              <img src="./assets/images/eagls.jpg" alt="" class="card__img">
-              <div class="card__block">
-                <div class="card__text">
-                  <p class="btn">Eagles</p>
-                  <p class="smallParagraph">Native to South America</p>
-                </div>
-                <div class="card__icons">
-                  <img class="icon" src="./assets/svg/steak_icon.svg" alt="">
-                  <img class="icon" src="./assets/svg/fish_icon.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="card noselect cursor-pointer">
-              <img src="./assets/images/gorillas.jpg" alt="" class="card__img">
-              <div class="card__block">
-                <div class="card__text">
-                  <p class="btn">Gorillas</p>
-                  <p class="smallParagraph">Native to Congo</p>
-                </div>
-                <div class="card__icons">
-                  <img class="icon" src="./assets/svg/bamboo_gr.svg" alt="">
-                  <img class="icon" src="./assets/svg/banana.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="card noselect cursor-pointer">
-              <img src="./assets/images/twotoed.jpg" alt="" class="card__img">
-              <div class="card__block">
-                <div class="card__text">
-                  <p class="btn">Two-toed Sloth</p>
-                  <p class="smallParagraph">Mesoamerica, South America</p>
-                </div>
-                <div class="card__icons">
-                  <img class="icon" src="./assets/svg/bamboo_gr.svg" alt="">
-                  <img class="icon" src="./assets/svg/banana.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="card noselect cursor-pointer">
-              <img src="./assets/images/cheetas.jpg" alt="" class="card__img">
-              <div class="card__block">
-                <div class="card__text">
-                  <p class="btn">cheetahs</p>
-                  <p class="smallParagraph">Native to Africa</p>
-                </div>
-                <div class="card__icons">
-                  <img class="icon" src="./assets/svg/steak_icon.svg" alt="">
-                  <img class="icon" src="./assets/svg/fish_icon.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="card noselect cursor-pointer">
-              <img src="./assets/images/peng.jpg" alt="" class="card__img">
-              <div class="card__block">
-                <div class="card__text">
-                  <p class="btn">Penguins</p>
-                  <p class="smallParagraph">Native to Antarctica</p>
-                </div>
-                <div class="card__icons">
-                  <img class="icon" src="./assets/svg/steak_icon.svg" alt="">
-                  <img class="icon" src="./assets/svg/fish_icon.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="card noselect cursor-pointer">
-              <img src="./assets/images/alligator.jpg" alt="" class="card__img">
-              <div class="card__block">
-                <div class="card__text">
-                  <p class="btn">Alligators</p>
-                  <p class="smallParagraph">Native to Southeastern U. S.</p>
-                </div>
-                <div class="card__icons">
-                  <img class="icon" src="./assets/svg/steak_icon.svg" alt="">
-                  <img class="icon" src="./assets/svg/fish_icon.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="pick-and-feed__arrows">
-              <div class="arrow orange cursor-pointer">
-                <img class="arrow__img" src="./assets/svg/arrow.svg" alt="">
-              </div>
-              <div class="arrow orange cursor-pointer">
-                <img class="arrow__img" src="./assets/svg/arrow.svg" alt="">
-              </div>
+            <div class="arrow orange cursor-pointer" id="next">
+              <img class="arrow__img" src="./assets/svg/arrow.svg" alt="">
             </div>
           </div>
           <button onclick="window.location.href='#map';" class="btn1 or3 cursor-pointer">choose your favorite</button>
