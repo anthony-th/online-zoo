@@ -300,6 +300,9 @@ cardRight.innerHTML = createCards().innerHTML;
 
 function resize() {
   inputRange.value = 0;
+  testimonialsCard.forEach(e => {
+    e.style.transform = 'translateX(0)';
+  })
   if (window.innerWidth < 1000) {
     counter = 4;
     changeValue();
@@ -334,9 +337,6 @@ function createCards() {
   }
   return newCards;
 }
-
-// alert('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
-// console.log('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
 
 let inputRange = document.querySelector('input[type="range"]');
 inputRange.addEventListener('input', changeValue);
@@ -442,11 +442,5 @@ function changeValue() {
     })
   }
 }
-// testimonialsCard.forEach(e => {
-//   if (window.innerWidth <= 640) {
-//   e.addEventListener('click', () => {
-//     e.style.cursor = 'pointer';
-//     console.log('hye');
-//   })
-//   }
-// })
+alert('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
+console.log('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
