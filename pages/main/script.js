@@ -36,8 +36,8 @@ function openBurger() {
   SHADOW.classList.toggle('display-block');
   BURGER_MENU.classList.toggle('burger-open-now');
   activeColorMenu.forEach(e => {
-    e.classList.toggle('active');
-    e.classList.toggle('orange');
+    e.classList.remove('active');
+    e.classList.remove('orange');
   })
   burgerLines.forEach((element) => {
     element.classList.toggle('burger-color');
@@ -479,6 +479,3 @@ function clickTesti() {
 }
 
 cancel.addEventListener('click', closeShadow);
-
-alert('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
-console.log('Dear Checker! Please check my work on Thursday! I am a little undone. Thank you so much!');
