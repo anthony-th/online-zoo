@@ -125,3 +125,54 @@ function reset() {
     };
   })
 }
+
+AMOUNT_INPUT.addEventListener('input', amountInput);
+AMOUNT_INPUT.addEventListener('change', amountChange);
+
+function amountChange() {
+  if (AMOUNT_INPUT.value == '100') {
+    arrayPrLabes[5].parentElement.classList.add('or3');
+    arrayPrBar[5].checked = 'true';
+  }
+  if (AMOUNT_INPUT.value == '5000') {
+    arrayPrLabes[0].parentElement.classList.add('or3');
+    arrayPrBar[0].checked = 'true';
+  }
+  if (AMOUNT_INPUT.value == '2000') {
+    arrayPrLabes[1].parentElement.classList.add('or3');
+    arrayPrBar[1].checked = 'true';
+  }
+  if (AMOUNT_INPUT.value == '1000') {
+    arrayPrLabes[2].parentElement.classList.add('or3');
+    arrayPrBar[2].checked = 'true';
+  }
+  if (AMOUNT_INPUT.value == '500') {
+    arrayPrLabes[3].parentElement.classList.add('or3');
+    arrayPrBar[3].checked = 'true';
+  }
+  if (AMOUNT_INPUT.value == '250') {
+    arrayPrLabes[4].parentElement.classList.add('or3');
+    arrayPrBar[4].checked = 'true';
+  }
+  if (AMOUNT_INPUT.value == '50') {
+    arrayPrLabes[6].parentElement.classList.add('or3');
+    arrayPrBar[6].checked = 'true';
+  }
+  if (AMOUNT_INPUT.value == '25') {
+    arrayPrLabes[7].parentElement.classList.add('or3');
+    arrayPrBar[7].checked = 'true';
+  }
+}
+
+function amountInput() {
+  arrayPrBar.forEach(el => {
+    if (el.checked) {
+      AMOUNT_INPUT.value = '';
+      el.checked = false;
+      arrayPrLabes.forEach(e => {
+        e.parentElement.classList.remove('or3');
+      })
+    };
+  })
+  this.value = this.value.replace(/[^0-9]/g, "").substr(0, 4);
+}
