@@ -34,3 +34,94 @@ function openBurger() {
     element.classList.toggle('burger-color');
   })
 }
+
+const BTN_AMOUNTS = document.querySelectorAll('.progress-bar__radio-button');
+const LABELS_PROGRESS = document.querySelectorAll('.progress-bar__label');
+const arrayPrBar = Array.from(BTN_AMOUNTS);
+const arrayPrLabes = Array.from(LABELS_PROGRESS);
+const AMOUNT_INPUT = document.getElementById('anotheramount');
+
+arrayPrBar.forEach(el => {
+  el.addEventListener('input', () => {
+    if (el.checked) {
+      AMOUNT_INPUT.value = el.value;
+      arrayPrLabes.forEach(e => {
+        e.parentElement.classList.remove('or3');
+      })
+      if (AMOUNT_INPUT.value == '100') {
+        arrayPrLabes[5].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '5000') {
+        arrayPrLabes[0].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '2000') {
+        arrayPrLabes[1].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '1000') {
+        arrayPrLabes[2].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '500') {
+        arrayPrLabes[3].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '250') {
+        arrayPrLabes[4].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '50') {
+        arrayPrLabes[6].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '25') {
+        arrayPrLabes[7].parentElement.classList.add('or3');
+      }
+    };
+  });
+})
+
+window.addEventListener('load', loadFunction);
+window.addEventListener('resize', reset);
+
+function loadFunction() {
+  arrayPrBar.forEach(el => {
+    if (el.checked) {
+      AMOUNT_INPUT.value = el.value;
+      arrayPrLabes.forEach(e => {
+        e.parentElement.classList.remove('or3');
+      })
+      if (AMOUNT_INPUT.value == '100') {
+        arrayPrLabes[5].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '5000') {
+        arrayPrLabes[0].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '2000') {
+        arrayPrLabes[1].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '1000') {
+        arrayPrLabes[2].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '500') {
+        arrayPrLabes[3].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '250') {
+        arrayPrLabes[4].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '50') {
+        arrayPrLabes[6].parentElement.classList.add('or3');
+      }
+      if (AMOUNT_INPUT.value == '25') {
+        arrayPrLabes[7].parentElement.classList.add('or3');
+      }
+    };
+  })
+}
+
+function reset() {
+  arrayPrBar.forEach(el => {
+    if (el.checked) {
+      AMOUNT_INPUT.value = '';
+      el.checked = false;
+      arrayPrLabes.forEach(e => {
+        e.parentElement.classList.remove('or3');
+      })
+    };
+  })
+}

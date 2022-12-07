@@ -81,7 +81,7 @@
               .progress-bar__radio-button {
                 height: 5px;
                 width: 5px;
-                &:nth-child(6) {
+                &:checked {
                   &::before {
                     background: url(../../assets/svg/roller_icon320.svg);
                     width: 20px;
@@ -115,7 +115,7 @@
                 width: 5px;
                 height: 10px;
                 position: absolute;
-                bottom: 21px;
+                bottom: 13px;
                 left: -7px;
               }
             }

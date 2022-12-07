@@ -391,6 +391,8 @@ input[type=number] {
   height: 36px;
   position: relative;
   margin-bottom: 50px;
+  display: flex;
+  align-items: center;
 }
 .pickfeed .pickfeed__container .pickfeed__main-block form .progress-text .progress-text__block .progress-bar__label {
   font-weight: 500;
@@ -937,15 +939,6 @@ input[type=number] {
   .pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar .progress-bar__main-block .progress-bar__radio-button:nth-child(2), .pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar .progress-bar__main-block .progress-bar__radio-button:nth-child(3) {
     display: none;
   }
-  .pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar .progress-bar__main-block .progress-bar__radio-button:nth-child(6)::before {
-    content: "";
-    background: url(../../assets/svg/roller-icon.svg);
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: calc(50% - 20px);
-    top: calc(50% - 20px);
-  }
   .pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar::before {
     bottom: 33px;
     left: 10px;
@@ -956,12 +949,6 @@ input[type=number] {
   }
   .pickfeed .pickfeed__container .pickfeed__main-block form .progress-text .progress-text__block:nth-child(2), .pickfeed .pickfeed__container .pickfeed__main-block form .progress-text .progress-text__block:nth-child(3) {
     display: none;
-  }
-  .pickfeed .pickfeed__container .pickfeed__main-block form .progress-text .progress-text__block:nth-child(6) .progress-bar__label {
-    color: #FE9013;
-  }
-  .pickfeed .pickfeed__container .pickfeed__main-block form .progress-text .progress-text__block:nth-child(6)::after {
-    filter: invert(53%) sepia(98%) saturate(1094%) hue-rotate(351deg) brightness(105%) contrast(99%);
   }
   .pickfeed .pickfeed__container .pickfeed__main-block form .anotheramount__label .another-amount-input {
     width: 180px;
@@ -1113,7 +1100,7 @@ input[type=number] {
     height: 5px;
     width: 5px;
   }
-  .pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar .progress-bar__main-block .progress-bar__radio-button:nth-child(6)::before {
+  .pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar .progress-bar__main-block .progress-bar__radio-button:checked::before {
     background: url(../../assets/svg/roller_icon320.svg);
     width: 20px;
     height: 20px;
@@ -1144,7 +1131,7 @@ input[type=number] {
     width: 5px;
     height: 10px;
     position: absolute;
-    bottom: 21px;
+    bottom: 13px;
     left: -7px;
   }
   .pickfeed .pickfeed__container .pickfeed__main-block form .radio-buttons {

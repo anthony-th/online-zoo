@@ -185,17 +185,17 @@
                 &:nth-child(3) {
                   display: none;
                 }
-                &:nth-child(6) {
-                  &::before {
-                    content: "";
-                    background: url(../../assets/svg/roller-icon.svg);
-                    width: 40px;
-                    height: 40px;
-                    position: absolute;
-                    left: calc(50% - 20px);
-                    top: calc(50% - 20px);
-                  }
-                }
+                // &:nth-child(6) {
+                //   &::before {
+                //     content: "";
+                //     background: url(../../assets/svg/roller-icon.svg);
+                //     width: 40px;
+                //     height: 40px;
+                //     position: absolute;
+                //     left: calc(50% - 20px);
+                //     top: calc(50% - 20px);
+                //   }
+                // }
               }
             }
             &::before {
@@ -211,14 +211,14 @@
               &:nth-child(3) {
                 display: none;
               }
-              &:nth-child(6) {
-                .progress-bar__label {
-                  color: #FE9013;
-                }
-                &::after {
-                  filter: invert(53%) sepia(98%) saturate(1094%) hue-rotate(351deg) brightness(105%) contrast(99%);            
-                }
-              }
+              // &:nth-child(6) {
+              //   .progress-bar__label {
+              //     color: #FE9013;
+              //   }
+              //   &::after {
+              //     filter: invert(53%) sepia(98%) saturate(1094%) hue-rotate(351deg) brightness(105%) contrast(99%);            
+              //   }
+              // }
             }
           }
           .anotheramount__label {
