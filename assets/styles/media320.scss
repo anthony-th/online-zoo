@@ -1,0 +1,308 @@
+@media screen and (max-width: 639px) {
+  body {
+    min-width: 320px;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .header {
+    .header__container {
+      padding: 2.29px 10px 2.68px;
+    }
+  }
+  .watch-you {
+    padding: 75.04px 0 44px;
+    background-position-y: 33px;
+    background-size: 385px 190px, cover;
+    @media screen and (min-width: 384px) and (max-width: 480px) {
+      background-size: 100% 220px, cover;
+    }
+    @media screen and (min-width: 480px) and (max-width: 534px) {
+      background-size: 100% 240px, cover;
+    }
+    @media screen and (min-width: 535px) and (max-width: 639px) {
+      background-size: 100% 270px, cover;
+    }
+    .watch-you__container {
+      justify-content: center;
+      right: 0;
+      padding: 0 10px;
+      .watch-you__block {
+        width: 128.13px;
+        height: 102.44px;
+        .watch-you__title {
+          right: -67%;
+          font-size: 28px;
+          &::before {
+            width: 119.09px;
+            height: 119.09px;
+            top: -19px;
+            left: -19px;
+          }
+        }
+        .btn1 {
+          position: relative;
+          bottom: -61px;
+          left: 1px;
+          min-height: 54px;
+        }
+      }
+    }
+  }
+  .the-backtage {
+    background-position: top 39px right -80px;
+    background-size: 112px 215px, cover;
+    padding: 105px 1px 39px 0;
+    .the-backtage__container {
+      .the-backtage__block {
+        gap: 9px;
+        .h2 {
+          font-size: 24px;
+          padding: 0;
+        }
+        .the-backtage__text {
+          padding: 0;
+          padding-left: 2px;
+          line-height: 132%;
+          &:last-child {
+            line-height: 137%;
+            left: -2px;
+          }
+        }
+        .subtitle {
+          padding-left: 2px;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+  .pets {
+    padding: 0 0 60px;
+    background: url(../../assets/images/palm_foto.png) bottom 0px left -73px/132px 71px no-repeat, url(../../assets/images/strelitzia.png) bottom -4px right -21px/92px 72px no-repeat;
+    .pets__container {
+      gap: 20px;
+      .cards-main-block {
+        max-width: 320px;
+        gap: 20px;
+        .cards {
+          min-width: auto;
+          gap: 20px;
+        }
+      }
+      .pick-and-feed__arrows {
+        display: none;
+      }
+    }
+  }
+  .pick-and-feed {
+    padding: 20px 10px;
+    .pick-and-feed__container {
+      padding: 21px 0 40px;
+      .pick-and-feed__text {
+        padding: 0;
+        margin-bottom: 19px;
+        .pick-and-feed__title {
+          font-size: 24px;
+          margin-bottom: 0;
+        }
+        .subtitle {
+          font-size: 18px;
+          text-align: center;
+          margin: 0;
+          line-height: 121%;
+          position: relative;
+          left: -1px;
+        }
+        .pick-and-feed__main-text {
+          display: none;
+        }
+      }
+      .pick-and-feed__main-block {
+        gap: 11px;
+        .h3 {
+          font-size: 24px;
+          margin-bottom: 7px;
+        }
+        .pick-and-feed__cards {
+          gap: 20px;
+          flex-direction: column;
+          right: 0;
+          .pick-and-feed__card {
+            gap: 11px;
+            height: 222px;
+            &:first-child {
+              &::before {
+                left: 101px;
+                top: 227px;
+                transform: rotate(83deg);
+              }
+            }
+            &:nth-child(2) {
+              gap: 10px;
+              height: 231px;
+              .pick-and-feed__card-subtitle {
+                line-height: 137%;
+              }
+              &::before {
+                left: 100px;
+                top: 234px;
+                transform: rotate(84deg);
+              }
+            }
+            &:nth-child(3) {
+              .pick-and-feed__card-subtitle {
+                line-height: 137%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .testimonials {
+    padding: 28px 0 136px;
+    background: url(../../assets/images/leav_foto1.png) bottom -30px right 0px no-repeat;
+    .testimonials__container {
+      .h3 {
+        font-size: 24px;
+        margin-bottom: 19px;
+      }
+      .testimonials__cards {
+        margin-bottom: 8px;
+        justify-content: center;
+        .testimonials__card {
+          gap: 6px;
+          width: 299px;
+          min-width: 299px;
+          padding: 11px 29px 12px 18px;
+          .card__top {
+            left: -4px;
+            top: -4px;
+            gap: 6px;
+            .testimonials__card-title {
+              gap: 4px;
+            }
+          }
+          &:first-child {
+            padding: 15px 18px 12px 17px;
+            .card__top {
+              .testimonials__card-title {
+                .user-subtitle {
+                  .smallParagraph {
+                    margin: 0;
+                  }
+                }
+              }
+            }
+            .testimals__text-block {
+              max-width: 279px;
+              .smallParagraph {
+                &:first-child {
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                }
+                &:last-child {
+                  display: none;
+                }
+              }
+            }
+          }
+          &:nth-child(6) {
+            .card__top {
+              .testimonials__card-title {
+                position: relative;
+                top: 1px;
+              }
+            }
+            .testimals__text-block {
+              width: 255px;
+              .smallParagraph {
+                &:first-child {
+                  max-width: 279px;
+                  text-indent: 0;
+                }
+              }
+            }
+          }
+          &:nth-child(7) {
+            padding: 15px 29px 12px 18px;
+            .card__top {
+              top: -5px;
+              .testimonials__card-title {
+                position: relative;
+                top: 1px;
+              }
+            }
+            .testimals__text-block {
+              width: 255px;
+              .smallParagraph {
+                &:first-child {
+                  max-width: 279px;
+                  text-indent: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .footer__container {
+      padding: 8px 13px 20px 8px;
+      flex-direction: column;
+      .footer__left {
+        height: 204px;
+        gap: 12px;
+        align-items: center;
+        .logo {
+          position: relative;
+          left: 8px;
+          width: 140px;
+          border: none;
+          .title {
+            text-align: center;
+          }
+          .logo__img {
+            top: 9px;
+            left: calc(59% - 10px);
+          }
+        }
+        .social {
+          flex-direction: row;
+          order: 2;
+          margin-bottom: 18px;
+          gap: 30px;
+          position: relative;
+          left: 2px;
+        }
+        .btn2 {
+          order: 3;
+        }
+      }
+      .footer__center {
+        position: static;
+        order: 3;
+        justify-content: center;
+        padding-left: 7px;
+        .nav {
+          .list {
+            gap: 30px;
+          }
+        }
+      }
+      .footer__right {
+        position: static;
+        order: 2;
+        margin-bottom: 29px;
+        .footer__copyright {
+          gap: 12px;
+          right: -2px;
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
