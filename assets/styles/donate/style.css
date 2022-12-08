@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Light.ttf") format("truetype");
+  src: url("../../fonts/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("../../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Medium.ttf") format("truetype");
+  src: url("../../fonts/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  src: url("../../fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -196,7 +196,7 @@ input[type=number] {
 }
 
 .watch-you {
-  background: url("../../assets/images/giantpanda.jpg") no-repeat;
+  background: url("../../images/giantpanda.jpg") no-repeat;
   height: 386px;
   background-position: center;
   background-size: cover;
@@ -351,7 +351,7 @@ input[type=number] {
 }
 .pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar .progress-bar__main-block .progress-bar__radio-button:checked::before {
   content: "";
-  background: url(../../assets/svg/roller-icon.svg);
+  background: url(../../svg/roller-icon.svg);
   width: 40px;
   height: 40px;
   position: absolute;
@@ -403,7 +403,7 @@ input[type=number] {
 }
 .pickfeed .pickfeed__container .pickfeed__main-block form .progress-text .progress-text__block::after {
   content: "";
-  background: url(../../assets/svg/dollar.svg);
+  background: url(../../svg/dollar.svg);
   width: 10px;
   height: 20px;
   position: absolute;
@@ -423,7 +423,7 @@ input[type=number] {
 }
 .pickfeed .pickfeed__container .pickfeed__main-block form .anotheramount__label::before {
   content: "";
-  background: url(../../assets/svg/dollar.svg);
+  background: url(../../svg/dollar.svg);
   width: 10px;
   height: 20px;
   position: absolute;
@@ -1101,7 +1101,7 @@ input[type=number] {
     width: 5px;
   }
   .pickfeed .pickfeed__container .pickfeed__main-block form .progress-bar .progress-bar__main-block .progress-bar__radio-button:checked::before {
-    background: url(../../assets/svg/roller_icon320.svg);
+    background: url(../../svg/roller_icon320.svg);
     width: 20px;
     height: 20px;
     left: calc(50% - 10px);
@@ -1127,7 +1127,7 @@ input[type=number] {
   }
   .pickfeed .pickfeed__container .pickfeed__main-block form .progress-text .progress-text__block::after {
     content: "";
-    background: url(../../assets/svg/dollar320.svg);
+    background: url(../../svg/dollar320.svg);
     width: 5px;
     height: 10px;
     position: absolute;

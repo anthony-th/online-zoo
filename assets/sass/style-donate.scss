@@ -1,27 +1,4 @@
-@font-face {
-  font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
+@import './config/_fonts';
 
 * {
   margin: 0;
@@ -200,7 +177,7 @@ input[type=number] {
 }
 
 .watch-you {
-  background: url('../../assets/images/giantpanda.jpg') no-repeat;
+  background: url('../../images/giantpanda.jpg') no-repeat;
   height: 386px;
   background-position: center;
   background-size: cover;
@@ -349,7 +326,7 @@ input[type=number] {
               &:checked {
                 &::before {
                   content: "";
-                  background: url(../../assets/svg/roller-icon.svg);
+                  background: url(../../svg/roller-icon.svg);
                   width: 40px;
                   height: 40px;
                   position: absolute;
@@ -403,7 +380,7 @@ input[type=number] {
             }
             &::after {
               content: "";
-              background: url(../../assets/svg/dollar.svg);
+              background: url(../../svg/dollar.svg);
               width: 10px;
               height: 20px;
               position: absolute;
@@ -426,7 +403,7 @@ input[type=number] {
           margin-bottom: 13px;
           &::before {
             content: "";
-            background: url(../../assets/svg/dollar.svg);
+            background: url(../../svg/dollar.svg);
             width: 10px;
             height: 20px;
             position: absolute;
@@ -670,7 +647,6 @@ input[type=number] {
   }
 }
 
-@import './media1000donate.scss';
-@import './media640donate.scss';
-// @import './media480donate.scss';
-@import './media320donate.scss';
+@import './media-queries/_media1000donate.scss';
+@import './media-queries/_media640donate.scss';
+@import './media-queries/_media320donate.scss';

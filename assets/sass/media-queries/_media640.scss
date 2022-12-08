@@ -173,7 +173,7 @@
     }
   }
   .the-backtage {
-    background: url(../../assets/images/flower_foto1.png) no-repeat;
+    background: url(../../images/flower_foto1.png) no-repeat;
     background-position: top -5px right -97px;
     background-size: 223px 476px, cover;
     padding: 60px 1px 79px 0;
@@ -202,7 +202,7 @@
     }
   }
   .pets {
-    background: url(../../assets/images/palm_foto.png) bottom 0px left -226px/360px 202px no-repeat, url(../../assets/images/strelitzia.png) bottom 0 right 0/174px 129px no-repeat;
+    background: url(../../images/palm_foto.png) bottom 0px left -226px/360px 202px no-repeat, url(../../images/strelitzia.png) bottom 0 right 0/174px 129px no-repeat;
     padding: 0 0 101px;
     .pets__container {
       gap: 60px;
@@ -276,7 +276,7 @@
             gap: 33px;
             &:first-child {
               &::before {
-                background-image: url(../../assets/images/arrow.png);
+                background-image: url(../../images/arrow.png);
                 top: -16px;
                 left: 135px;
                 width: 100%;
@@ -289,7 +289,7 @@
                 padding-top: 5px;
               }
               &::before {
-                background-image: url(../../assets/images/arrow.png);
+                background-image: url(../../images/arrow.png);
                 top: -16px;
                 left: 135px;
                 width: 100%;
@@ -304,7 +304,7 @@
   }
   .testimonials {
     padding: 60px 0 155px;
-    background: url(../../assets/images/leav_foto.png) bottom -69px right -83.47px/196px 204px no-repeat;
+    background: url(../../images/leav_foto.png) bottom -69px right -83.47px/196px 204px no-repeat;
     .testimonials__container {
       .testimonials__cards {
         gap: 15px;
