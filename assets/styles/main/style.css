@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Light.ttf") format("truetype");
+  src: url("../../fonts/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("../../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Medium.ttf") format("truetype");
+  src: url("../../fonts/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  src: url("../../fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -228,7 +228,7 @@ html {
 }
 
 .watch-you {
-  background: url(../../assets/images/giantpanda.jpg) no-repeat;
+  background: url(../../images/giantpanda.jpg) no-repeat;
   padding: 86px 0 100px;
   background-position: center;
   background-position-y: -80px;
@@ -302,7 +302,7 @@ html {
 
 .the-backtage {
   padding: 140px 1px 176px 0;
-  background: url(../../assets/images/flower_foto1.png) no-repeat;
+  background: url(../../images/flower_foto1.png) no-repeat;
   background-position: top 12px right -93px;
 }
 .the-backtage .the-backtage__container {
@@ -347,7 +347,7 @@ html {
 
 .pets {
   padding: 0 0 100px;
-  background: url(../../assets/images/palm_foto.png) bottom 0 left -528px, url(../../assets/images/strelitzia.png) bottom 0 right 0;
+  background: url(../../images/palm_foto.png) bottom 0 left -528px, url(../../images/strelitzia.png) bottom 0 right 0;
   background-repeat: no-repeat;
 }
 .pets .pets__container {
@@ -569,7 +569,7 @@ html {
 .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card:first-child::before, .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card:nth-child(2)::before {
   content: "";
   position: absolute;
-  background-image: url(../../assets/svg/sparrow.svg);
+  background-image: url(../../svg/sparrow.svg);
   width: 71px;
   height: 37px;
   left: calc(100% + 29px);
@@ -620,7 +620,7 @@ html {
 
 .testimonials {
   padding: 141px 0 266px;
-  background: url(../../assets/images/leav_foto.png) no-repeat;
+  background: url(../../images/leav_foto.png) no-repeat;
   background-position: bottom -132px right -161.48px;
 }
 .testimonials .testimonials__container {
@@ -1035,7 +1035,7 @@ html {
     object-fit: cover;
   }
   .pets {
-    background: url(../../assets/images/palm_foto.png) bottom 0px left -185px/384px 202px no-repeat, url(../../assets/images/strelitzia.png) bottom 0 right 0/241px 180px no-repeat;
+    background: url(../../images/palm_foto.png) bottom 0px left -185px/384px 202px no-repeat, url(../../images/strelitzia.png) bottom 0 right 0/241px 180px no-repeat;
     padding: 0 0 142px;
   }
   .pets .pets__container .cards-main-block {
@@ -1099,7 +1099,7 @@ html {
   }
   .testimonials {
     padding: 102px 0 246px;
-    background: url(../../assets/images/leav_foto.png) bottom -84px right -120.47px/310px 319px no-repeat;
+    background: url(../../images/leav_foto.png) bottom -84px right -120.47px/310px 319px no-repeat;
   }
   .testimonials .testimonials__container .h3 {
     margin-bottom: 30px;
@@ -1432,7 +1432,7 @@ html {
 }
 @media screen and (max-width: 999px) {
   .the-backtage {
-    background: url(../../assets/images/flower_foto1.png) no-repeat;
+    background: url(../../images/flower_foto1.png) no-repeat;
     background-position: top -5px right -97px;
     background-size: 223px 476px, cover;
     padding: 60px 1px 79px 0;
@@ -1461,7 +1461,7 @@ html {
 }
 @media screen and (max-width: 999px) {
   .pets {
-    background: url(../../assets/images/palm_foto.png) bottom 0px left -226px/360px 202px no-repeat, url(../../assets/images/strelitzia.png) bottom 0 right 0/174px 129px no-repeat;
+    background: url(../../images/palm_foto.png) bottom 0px left -226px/360px 202px no-repeat, url(../../images/strelitzia.png) bottom 0 right 0/174px 129px no-repeat;
     padding: 0 0 101px;
   }
   .pets .pets__container {
@@ -1537,7 +1537,7 @@ html {
     gap: 33px;
   }
   .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card:first-child::before {
-    background-image: url(../../assets/images/arrow.png);
+    background-image: url(../../images/arrow.png);
     top: -16px;
     left: 135px;
     width: 100%;
@@ -1548,7 +1548,7 @@ html {
     padding-top: 5px;
   }
   .pick-and-feed .pick-and-feed__container .pick-and-feed__main-block .pick-and-feed__cards .pick-and-feed__card:nth-child(2)::before {
-    background-image: url(../../assets/images/arrow.png);
+    background-image: url(../../images/arrow.png);
     top: -16px;
     left: 135px;
     width: 100%;
@@ -1559,7 +1559,7 @@ html {
 @media screen and (max-width: 999px) {
   .testimonials {
     padding: 60px 0 155px;
-    background: url(../../assets/images/leav_foto.png) bottom -69px right -83.47px/196px 204px no-repeat;
+    background: url(../../images/leav_foto.png) bottom -69px right -83.47px/196px 204px no-repeat;
   }
   .testimonials .testimonials__container .testimonials__cards {
     gap: 15px;
@@ -1790,7 +1790,7 @@ html {
 @media screen and (max-width: 639px) {
   .pets {
     padding: 0 0 60px;
-    background: url(../../assets/images/palm_foto.png) bottom 0px left -73px/132px 71px no-repeat, url(../../assets/images/strelitzia.png) bottom -4px right -21px/92px 72px no-repeat;
+    background: url(../../images/palm_foto.png) bottom 0px left -73px/132px 71px no-repeat, url(../../images/strelitzia.png) bottom -4px right -21px/92px 72px no-repeat;
   }
   .pets .pets__container {
     gap: 20px;
@@ -1873,7 +1873,7 @@ html {
 @media screen and (max-width: 639px) {
   .testimonials {
     padding: 28px 0 136px;
-    background: url(../../assets/images/leav_foto1.png) bottom -30px right 0px no-repeat;
+    background: url(../../images/leav_foto1.png) bottom -30px right 0px no-repeat;
   }
   .testimonials .testimonials__container .h3 {
     font-size: 24px;

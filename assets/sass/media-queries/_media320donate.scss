@@ -83,7 +83,7 @@
                 width: 5px;
                 &:checked {
                   &::before {
-                    background: url(../../assets/svg/roller_icon320.svg);
+                    background: url(../../svg/roller_icon320.svg);
                     width: 20px;
                     height: 20px;
                     left: calc(50% - 10px);
@@ -111,7 +111,7 @@
               }
               &::after {
                 content: "";
-                background: url(../../assets/svg/dollar320.svg);
+                background: url(../../svg/dollar320.svg);
                 width: 5px;
                 height: 10px;
                 position: absolute;

@@ -1,6 +1,6 @@
-@import './constants.scss';
-@import './fonts.scss';
-@import './modal.scss';
+@import './config/_constants';
+@import './config/_fonts';
+@import './modules/_modal';
 
 * {
   margin: 0;
@@ -144,7 +144,7 @@ html {
 }
 
 .watch-you {
-  background: url(../../assets/images/giantpanda.jpg) no-repeat;
+  background: url(../../images/giantpanda.jpg) no-repeat;
   padding: 86px 0 100px;
   background-position: center;
   background-position-y: -80px;
@@ -216,7 +216,7 @@ html {
 
 .the-backtage {
   padding: 140px 1px 176px 0;
-  background: url(../../assets/images/flower_foto1.png) no-repeat;
+  background: url(../../images/flower_foto1.png) no-repeat;
   background-position: top 12px right -93px;
   .the-backtage__container {
     gap: 87px;
@@ -261,7 +261,7 @@ html {
 
 .pets {
   padding: 0 0 100px;
-  background: url(../../assets/images/palm_foto.png) bottom 0 left -528px, url(../../assets/images/strelitzia.png) bottom 0 right 0;
+  background: url(../../images/palm_foto.png) bottom 0 left -528px, url(../../images/strelitzia.png) bottom 0 right 0;
   background-repeat: no-repeat;
   .pets__container {
     justify-content: space-between;
@@ -488,7 +488,7 @@ html {
             &::before {
               content: "";
               position: absolute;
-              background-image: url(../../assets/svg/sparrow.svg);
+              background-image: url(../../svg/sparrow.svg);
               width: 71px;
               height: 37px;
               left: calc(100% + 29px);
@@ -549,7 +549,7 @@ html {
 
 .testimonials {
   padding: 141px 0 266px;
-  background: url(../../assets/images/leav_foto.png) no-repeat;
+  background: url(../../images/leav_foto.png) no-repeat;
   background-position: bottom -132px right -161.48px;
   .testimonials__container {
     flex-direction: column;
@@ -936,6 +936,6 @@ html {
   }
 }
 
-@import './media1000.scss';
-@import './media640.scss';
-@import './media320.scss';
+@import './media-queries/_media1000.scss';
+@import './media-queries/_media640.scss';
+@import './media-queries/_media320.scss';

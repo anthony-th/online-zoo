@@ -175,6 +175,3 @@ function amountInput() {
   this.value = this.value.replace(/[^0-9]/g, "").slice(0, 4);
   amountChange();
 }
-
-console.log(`Dont forget about: "❗When we check conditions for different screen widths, we don't just stretch the screen to the desired width, but do a page reload!": https://github.com/rolling-scopes-school/js-fe-course-en/blob/main/tasks/online-zoo/online-zoo.md#general-3`);
-alert(`Dont forget about: "❗When we check conditions for different screen widths, we don't just stretch the screen to the desired width, but do a page reload!": https://github.com/rolling-scopes-school/js-fe-course-en/blob/main/tasks/online-zoo/online-zoo.md#general-3`);
